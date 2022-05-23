@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.soywiz.korlibs.kmem:kmem-android:2.4.10@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1df4ecd1ad17c7bff1eca9433a7dc2cc/transformed/jetified-kmem-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/600ff550b6469981d813c0be6005fe9b/transformed/jetified-kmem-debug/res" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/transforms-3/1df4ecd1ad17c7bff1eca9433a7dc2cc/transformed/jetified-kmem-debug/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/transforms-3/1df4ecd1ad17c7bff1eca9433a7dc2cc/transformed/jetified-kmem-debug/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/transforms-3/1df4ecd1ad17c7bff1eca9433a7dc2cc/transformed/jetified-kmem-debug/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.kmem/kmem-android/2.4.10/cf79f0f0dc206b26f97ef63a53b7cc632662fc09/kmem-android-2.4.10-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.kmem/kmem-android/2.4.10/ce7181985219ed8aba6d5078c66ceffd64f73de3/kmem-android-2.4.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

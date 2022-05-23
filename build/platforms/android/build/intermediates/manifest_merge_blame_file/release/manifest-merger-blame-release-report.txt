@@ -1,0 +1,70 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.supertrean.game"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml
+10
+11    <uses-feature
+11-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml:6:2-87
+12        android:name="android.hardware.touchscreen"
+12-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml:6:16-59
+13        android:required="false" />
+13-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml:6:60-84
+14    <uses-feature
+14-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml:7:2-84
+15        android:name="android.software.leanback"
+15-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml:7:16-56
+16        android:required="false" />
+16-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml:7:57-81
+17
+18    <application
+18-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml:8:2-29:16
+19        android:name="androidx.multidex.MultiDexApplication"
+20        android:allowBackup="true"
+20-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml:10:3-29
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.0.0] C:\Users\pinb4\.gradle\caches\transforms-3\a31675ba48270d82d3b68a886f163ff3\transformed\core-1.0.0\AndroidManifest.xml:22:18-86
+22        android:icon="@mipmap/icon"
+22-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml:12:3-30
+23        android:label="unnamed"
+23-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml:11:3-26
+24        android:roundIcon="@android:drawable/sym_def_app_icon"
+24-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml:13:3-57
+25        android:supportsRtl="true"
+25-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml:15:3-29
+26        android:theme="@android:style/Theme.Holo.NoActionBar" >
+26-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml:14:3-56
+27        <activity
+27-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml:17:3-28:14
+28            android:name="com.supertrean.game.MainActivity"
+28-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml:17:13-41
+29            android:banner="@drawable/app_banner"
+29-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml:18:4-41
+30            android:icon="@drawable/app_icon"
+30-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml:19:4-37
+31            android:label="unnamed"
+31-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml:20:4-27
+32            android:logo="@drawable/app_icon"
+32-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml:21:4-37
+33            android:screenOrientation="landscape" >
+33-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml:22:4-41
+34            <intent-filter>
+34-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml:24:4-27:20
+35                <action android:name="android.intent.action.MAIN" />
+35-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml:25:5-56
+35-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml:25:13-54
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml:26:5-64
+37-->C:\Korge Projects\korge-runner-game\build\platforms\android\src\main\AndroidManifest.xml:26:15-62
+38            </intent-filter>
+39        </activity>
+40    </application>
+41
+42</manifest>

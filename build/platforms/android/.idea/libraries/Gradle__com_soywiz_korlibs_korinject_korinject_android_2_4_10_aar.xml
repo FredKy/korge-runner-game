@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.soywiz.korlibs.korinject:korinject-android:2.4.10@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/851468db52da2a9195f1631f97ada029/transformed/jetified-korinject-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/817fec82c5fbf06e83951d0414bd4b29/transformed/jetified-korinject-debug/res" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/transforms-3/851468db52da2a9195f1631f97ada029/transformed/jetified-korinject-debug/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/transforms-3/851468db52da2a9195f1631f97ada029/transformed/jetified-korinject-debug/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/transforms-3/851468db52da2a9195f1631f97ada029/transformed/jetified-korinject-debug/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korinject/korinject-android/2.4.10/4163c4b3d04b00768d2924ee1e7ba27314578e60/korinject-android-2.4.10-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korinject/korinject-android/2.4.10/b07f47ee4f17e5e18a1fa2200550328bf4921e1f/korinject-android-2.4.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

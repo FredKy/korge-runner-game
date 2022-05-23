@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "F:\\Korge_projekt\\korge-runner\\build\\platforms\\android\\build\\intermediates\\merged_res\\debug\\drawable_app_icon.png.flat",
+        "source": "F:\\Korge_projekt\\korge-runner\\build\\platforms\\android\\src\\main\\res\\drawable\\app_icon.png"
+    },
+    {
+        "merged": "F:\\Korge_projekt\\korge-runner\\build\\platforms\\android\\build\\intermediates\\merged_res\\debug\\drawable_app_banner.png.flat",
+        "source": "F:\\Korge_projekt\\korge-runner\\build\\platforms\\android\\src\\main\\res\\drawable\\app_banner.png"
+    },
+    {
+        "merged": "F:\\Korge_projekt\\korge-runner\\build\\platforms\\android\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_icon.png.flat",
+        "source": "F:\\Korge_projekt\\korge-runner\\build\\platforms\\android\\src\\main\\res\\mipmap-mdpi\\icon.png"
+    }
+]

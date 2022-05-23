@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.soywiz.korlibs.korau:korau-android:2.4.10@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7d229677fbeec034a5907ede2cd54cd5/transformed/jetified-korau-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a7189db96a0f8bff30065c70c305d3bb/transformed/jetified-korau-debug/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/transforms-3/7d229677fbeec034a5907ede2cd54cd5/transformed/jetified-korau-debug/res" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/transforms-3/7d229677fbeec034a5907ede2cd54cd5/transformed/jetified-korau-debug/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/transforms-3/7d229677fbeec034a5907ede2cd54cd5/transformed/jetified-korau-debug/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korau/korau-android/2.4.10/970abf4ecc8ade476b1ff28d8bc9c7961f3e73ec/korau-android-2.4.10-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korau/korau-android/2.4.10/adb03b77ffaa15bec84bdd6e22f12b792308bd99/korau-android-2.4.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,8 @@
+builtins_platform=JS
+unique_name=korge-runner-game_test
+compiler_version=1.6.10
+depends=korge-runner-game com.soywiz.korlibs.korge2\:korge com.soywiz.korlibs.korgw\:korgw com.soywiz.korlibs.korim\:korim com.soywiz.korlibs.korau\:korau com.soywiz.korlibs.korio\:korio com.soywiz.korlibs.korinject\:korinject com.soywiz.korlibs.korma\:korma kotlin-test org.jetbrains.kotlinx\:kotlinx-coroutines-core com.soywiz.korlibs.klock\:klock com.soywiz.korlibs.kmem\:kmem com.soywiz.korlibs.kds\:kds com.soywiz.korlibs.krypto\:krypto org.jetbrains.kotlinx\:atomicfu com.soywiz.korlibs.korte\:korte com.soywiz.korlibs.klogger\:klogger kotlin
+jsOutputName=korge-runner-game-test
+abi_version=1.6.0
+metadata_version=1.4.1
+ir_version=1.0.0

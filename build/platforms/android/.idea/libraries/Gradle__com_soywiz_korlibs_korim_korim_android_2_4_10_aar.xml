@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.soywiz.korlibs.korim:korim-android:2.4.10@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/47f42a78a4173e198bc4fcd5bc43c0ce/transformed/jetified-korim-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0a9a453e3b55ce122304664ab218226a/transformed/jetified-korim-debug/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/transforms-3/47f42a78a4173e198bc4fcd5bc43c0ce/transformed/jetified-korim-debug/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/transforms-3/47f42a78a4173e198bc4fcd5bc43c0ce/transformed/jetified-korim-debug/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/transforms-3/47f42a78a4173e198bc4fcd5bc43c0ce/transformed/jetified-korim-debug/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korim/korim-android/2.4.10/68f3fd9925ef5f8d2a8f99c83dce325cec0d6c2e/korim-android-2.4.10-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korim/korim-android/2.4.10/e8c6b4586cebbef72530b7fdc19da2bd5312f02f/korim-android-2.4.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

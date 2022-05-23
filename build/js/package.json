@@ -1,0 +1,18 @@
+{
+  "name": "korge-runner-game",
+  "version": "4.10.1",
+  "private": true,
+  "workspaces": [
+    "packages\\korge-runner-game",
+    "packages\\korge-runner-game-test",
+    "packages_imported\\kotlin\\1.6.10",
+    "packages_imported\\kotlin-test-js-runner\\1.6.10",
+    "packages_imported\\kotlin-test\\1.6.10"
+  ],
+  "resolutions": {},
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}

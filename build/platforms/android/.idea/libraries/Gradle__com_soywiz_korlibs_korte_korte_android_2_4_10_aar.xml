@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.soywiz.korlibs.korte:korte-android:2.4.10@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2ef544fdff511e53192aa8913f54d131/transformed/jetified-korte-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8b5bb98e6739da5c01329554d7fd3206/transformed/jetified-korte-debug/res" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/transforms-3/2ef544fdff511e53192aa8913f54d131/transformed/jetified-korte-debug/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/transforms-3/2ef544fdff511e53192aa8913f54d131/transformed/jetified-korte-debug/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/transforms-3/2ef544fdff511e53192aa8913f54d131/transformed/jetified-korte-debug/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korte/korte-android/2.4.10/1659760fe88a7f0311d6fd63a36da336e8badff2/korte-android-2.4.10-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korte/korte-android/2.4.10/3bdece4540d20087bbc2b927209228bfdf930025/korte-android-2.4.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

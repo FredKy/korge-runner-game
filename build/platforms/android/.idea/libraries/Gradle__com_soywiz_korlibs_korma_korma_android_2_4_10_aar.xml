@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.soywiz.korlibs.korma:korma-android:2.4.10@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c6a8a7df96d83ffc7b1235fab8dd1c3d/transformed/jetified-korma-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6b46bcb2481f2c115dbacc5797d3b1cf/transformed/jetified-korma-debug/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/transforms-3/c6a8a7df96d83ffc7b1235fab8dd1c3d/transformed/jetified-korma-debug/res" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/transforms-3/c6a8a7df96d83ffc7b1235fab8dd1c3d/transformed/jetified-korma-debug/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/transforms-3/c6a8a7df96d83ffc7b1235fab8dd1c3d/transformed/jetified-korma-debug/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korma/korma-android/2.4.10/31168e30ad3474437d37897bfc020096dbbc6843/korma-android-2.4.10-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korma/korma-android/2.4.10/dc9ae0f691e9bdbc7eeb3b50bc41c4f987b916b/korma-android-2.4.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

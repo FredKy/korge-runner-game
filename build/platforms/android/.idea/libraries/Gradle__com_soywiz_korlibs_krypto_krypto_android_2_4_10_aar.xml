@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.soywiz.korlibs.krypto:krypto-android:2.4.10@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/08a33a856978c7fc129b468f75d17a89/transformed/jetified-krypto-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/44c27381f6e14310b0b8257048383da5/transformed/jetified-krypto-debug/res" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/transforms-3/08a33a856978c7fc129b468f75d17a89/transformed/jetified-krypto-debug/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/transforms-3/08a33a856978c7fc129b468f75d17a89/transformed/jetified-krypto-debug/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/transforms-3/08a33a856978c7fc129b468f75d17a89/transformed/jetified-krypto-debug/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.krypto/krypto-android/2.4.10/5e00bf3c48ecb0690cf7dc21bbe4b41f7d2f01c6/krypto-android-2.4.10-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.krypto/krypto-android/2.4.10/1efc26ea703c3d23ff0d56834de01f5878b2cefd/krypto-android-2.4.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

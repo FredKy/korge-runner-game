@@ -1,0 +1,4 @@
+#Mon May 23 14:30:24 CEST 2022
+base.0=C\:\\Korge Projects\\korge-runner-game\\build\\platforms\\android\\build\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

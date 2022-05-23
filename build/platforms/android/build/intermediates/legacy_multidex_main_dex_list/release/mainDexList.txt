@@ -1,0 +1,16 @@
+androidx/annotation/Keep.class
+androidx/core/app/CoreComponentFactory$a.class
+androidx/core/app/CoreComponentFactory.class
+androidx/multidex/MultiDexApplication.class
+f/d.class
+r2/e.class
+x/a.class
+x/b.class
+x/c.class
+x/d.class
+x/e.class
+x/f.class
+x/g$a.class
+x/g.class
+x/h$a.class
+x/h.class

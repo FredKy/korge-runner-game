@@ -1,0 +1,17 @@
+{
+  "name": "korge-runner-game",
+  "version": "4.10.1",
+  "main": "korge-runner-game.js",
+  "types": "korge-runner-game.d.ts",
+  "devDependencies": {
+    "webpack": "5.57.1",
+    "webpack-cli": "4.9.0",
+    "format-util": "1.0.5",
+    "source-map-loader": "3.0.0",
+    "webpack-dev-server": "4.0.0-rc.0"
+  },
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}

@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.soywiz.korlibs.korgw:korgw-android:2.4.10@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/368f80e9b2065f3308d6bf99ebac0264/transformed/jetified-korgw-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3bdeac56aaee671baaec47831352c405/transformed/jetified-korgw-debug/res" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/transforms-3/368f80e9b2065f3308d6bf99ebac0264/transformed/jetified-korgw-debug/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/transforms-3/368f80e9b2065f3308d6bf99ebac0264/transformed/jetified-korgw-debug/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/transforms-3/368f80e9b2065f3308d6bf99ebac0264/transformed/jetified-korgw-debug/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korgw/korgw-android/2.4.10/358c27f6586cff98a1df6c77b0d90465ea3ee158/korgw-android-2.4.10-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../../Users/Fredrik/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korgw/korgw-android/2.4.10/1dcb90745c30b71cbaf0e6e1f443f60a8987c545/korgw-android-2.4.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
