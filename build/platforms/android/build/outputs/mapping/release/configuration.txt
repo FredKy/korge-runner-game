@@ -1,4 +1,4 @@
-# The proguard configuration file for the following section is C:\Korge Projects\korge-runner-game\build\platforms\android\build\intermediates\default_proguard_files\global\proguard-android-optimize.txt-7.0.3
+# The proguard configuration file for the following section is /Users/saimanchen/Documents/STI/projektmetodik/korge-runner-game/build/platforms/android/build/intermediates/default_proguard_files/global/proguard-android-optimize.txt-7.0.3
 # This is a configuration file for ProGuard.
 # http://proguard.sourceforge.net/index.html#manual/usage.html
 #
@@ -111,12 +111,12 @@
 # These classes are duplicated between android.jar and core-lambda-stubs.jar.
 -dontnote java.lang.invoke.**
 
-# End of content from C:\Korge Projects\korge-runner-game\build\platforms\android\build\intermediates\default_proguard_files\global\proguard-android-optimize.txt-7.0.3
-# The proguard configuration file for the following section is C:\Korge Projects\korge-runner-game\build\platforms\android\proguard-rules.pro
+# End of content from /Users/saimanchen/Documents/STI/projektmetodik/korge-runner-game/build/platforms/android/build/intermediates/default_proguard_files/global/proguard-android-optimize.txt-7.0.3
+# The proguard configuration file for the following section is /Users/saimanchen/Documents/STI/projektmetodik/korge-runner-game/build/platforms/android/proguard-rules.pro
 #Rules here
 
-# End of content from C:\Korge Projects\korge-runner-game\build\platforms\android\proguard-rules.pro
-# The proguard configuration file for the following section is C:\Korge Projects\korge-runner-game\build\platforms\android\build\intermediates\aapt_proguard_file\release\aapt_rules.txt
+# End of content from /Users/saimanchen/Documents/STI/projektmetodik/korge-runner-game/build/platforms/android/proguard-rules.pro
+# The proguard configuration file for the following section is /Users/saimanchen/Documents/STI/projektmetodik/korge-runner-game/build/platforms/android/build/intermediates/aapt_proguard_file/release/aapt_rules.txt
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
 -keep class androidx.multidex.MultiDexApplication { <init>(); }
 -keep class com.supertrean.game.MainActivity { <init>(); }
@@ -161,8 +161,8 @@
 -keep class androidx.core.widget.NestedScrollView { <init>(android.content.Context, android.util.AttributeSet); }
 
 
-# End of content from C:\Korge Projects\korge-runner-game\build\platforms\android\build\intermediates\aapt_proguard_file\release\aapt_rules.txt
-# The proguard configuration file for the following section is C:\Users\pinb4\.gradle\caches\transforms-3\1b2bbe123f1929c2de9f7c31f900fa71\transformed\rules\lib\META-INF\com.android.tools\r8-from-1.6.0\coroutines.pro
+# End of content from /Users/saimanchen/Documents/STI/projektmetodik/korge-runner-game/build/platforms/android/build/intermediates/aapt_proguard_file/release/aapt_rules.txt
+# The proguard configuration file for the following section is /Users/saimanchen/.gradle/caches/transforms-3/1b2bbe123f1929c2de9f7c31f900fa71/transformed/rules/lib/META-INF/com.android.tools/r8-from-1.6.0/coroutines.pro
 # Allow R8 to optimize away the FastServiceLoader.
 # Together with ServiceLoader optimization in R8
 # this results in direct instantiation when loading Dispatchers.Main
@@ -187,8 +187,8 @@
     boolean getDEBUG() return false;
     boolean getRECOVER_STACK_TRACES() return false;
 }
-# End of content from C:\Users\pinb4\.gradle\caches\transforms-3\1b2bbe123f1929c2de9f7c31f900fa71\transformed\rules\lib\META-INF\com.android.tools\r8-from-1.6.0\coroutines.pro
-# The proguard configuration file for the following section is C:\Users\pinb4\.gradle\caches\transforms-3\73ce2a23e7d153b3c1d4e340524f3e44\transformed\rules\lib\META-INF\proguard\coroutines.pro
+# End of content from /Users/saimanchen/.gradle/caches/transforms-3/1b2bbe123f1929c2de9f7c31f900fa71/transformed/rules/lib/META-INF/com.android.tools/r8-from-1.6.0/coroutines.pro
+# The proguard configuration file for the following section is /Users/saimanchen/.gradle/caches/transforms-3/73ce2a23e7d153b3c1d4e340524f3e44/transformed/rules/lib/META-INF/proguard/coroutines.pro
 # ServiceLoader support
 -keepnames class kotlinx.coroutines.internal.MainDispatcherFactory {}
 -keepnames class kotlinx.coroutines.CoroutineExceptionHandler {}
@@ -210,8 +210,8 @@
 -dontwarn java.lang.instrument.Instrumentation
 -dontwarn sun.misc.Signal
 
-# End of content from C:\Users\pinb4\.gradle\caches\transforms-3\73ce2a23e7d153b3c1d4e340524f3e44\transformed\rules\lib\META-INF\proguard\coroutines.pro
-# The proguard configuration file for the following section is C:\Users\pinb4\.gradle\caches\transforms-3\d83757246ab4e7c5e1780bffe46dce88\transformed\appcompat-1.0.0\proguard.txt
+# End of content from /Users/saimanchen/.gradle/caches/transforms-3/73ce2a23e7d153b3c1d4e340524f3e44/transformed/rules/lib/META-INF/proguard/coroutines.pro
+# The proguard configuration file for the following section is /Users/saimanchen/.gradle/caches/transforms-3/d83757246ab4e7c5e1780bffe46dce88/transformed/appcompat-1.0.0/proguard.txt
 # Copyright (C) 2018 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -233,8 +233,8 @@
 # aapt is not able to read app::actionViewClass and app:actionProviderClass to produce proguard
 # keep rules. Add a commonly used SearchView to the keep list until b/109831488 is resolved.
 -keep class androidx.appcompat.widget.SearchView { <init>(...); }
-# End of content from C:\Users\pinb4\.gradle\caches\transforms-3\d83757246ab4e7c5e1780bffe46dce88\transformed\appcompat-1.0.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pinb4\.gradle\caches\transforms-3\a4a7cc4132734216a9b337abe96e28ca\transformed\vectordrawable-animated-1.0.0\proguard.txt
+# End of content from /Users/saimanchen/.gradle/caches/transforms-3/d83757246ab4e7c5e1780bffe46dce88/transformed/appcompat-1.0.0/proguard.txt
+# The proguard configuration file for the following section is /Users/saimanchen/.gradle/caches/transforms-3/a4a7cc4132734216a9b337abe96e28ca/transformed/vectordrawable-animated-1.0.0/proguard.txt
 # Copyright (C) 2016 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -255,8 +255,8 @@
    *** get*();
 }
 
-# End of content from C:\Users\pinb4\.gradle\caches\transforms-3\a4a7cc4132734216a9b337abe96e28ca\transformed\vectordrawable-animated-1.0.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pinb4\.gradle\caches\transforms-3\90e4c70d9347f70e2714df8960b025e7\transformed\coordinatorlayout-1.0.0\proguard.txt
+# End of content from /Users/saimanchen/.gradle/caches/transforms-3/a4a7cc4132734216a9b337abe96e28ca/transformed/vectordrawable-animated-1.0.0/proguard.txt
+# The proguard configuration file for the following section is /Users/saimanchen/.gradle/caches/transforms-3/90e4c70d9347f70e2714df8960b025e7/transformed/coordinatorlayout-1.0.0/proguard.txt
 # Copyright (C) 2016 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -280,20 +280,20 @@
 # Make sure we keep annotations for CoordinatorLayout's DefaultBehavior and ViewPager's DecorView
 -keepattributes *Annotation*
 
-# End of content from C:\Users\pinb4\.gradle\caches\transforms-3\90e4c70d9347f70e2714df8960b025e7\transformed\coordinatorlayout-1.0.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pinb4\.gradle\caches\transforms-3\a31675ba48270d82d3b68a886f163ff3\transformed\core-1.0.0\proguard.txt
+# End of content from /Users/saimanchen/.gradle/caches/transforms-3/90e4c70d9347f70e2714df8960b025e7/transformed/coordinatorlayout-1.0.0/proguard.txt
+# The proguard configuration file for the following section is /Users/saimanchen/.gradle/caches/transforms-3/a31675ba48270d82d3b68a886f163ff3/transformed/core-1.0.0/proguard.txt
 # aapt2 is not (yet) keeping FQCNs defined in the appComponentFactory <application> attribute
 -keep class androidx.core.app.CoreComponentFactory
 
-# End of content from C:\Users\pinb4\.gradle\caches\transforms-3\a31675ba48270d82d3b68a886f163ff3\transformed\core-1.0.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pinb4\.gradle\caches\transforms-3\5f0273643ba3542b2b112ca303ebbf53\transformed\versionedparcelable-1.0.0\proguard.txt
+# End of content from /Users/saimanchen/.gradle/caches/transforms-3/a31675ba48270d82d3b68a886f163ff3/transformed/core-1.0.0/proguard.txt
+# The proguard configuration file for the following section is /Users/saimanchen/.gradle/caches/transforms-3/5f0273643ba3542b2b112ca303ebbf53/transformed/versionedparcelable-1.0.0/proguard.txt
 -keep public class * extends androidx.versionedparcelable.VersionedParcelable
 -keep public class android.support.**Parcelizer { *; }
 -keep public class androidx.**Parcelizer { *; }
 -keep public class androidx.versionedparcelable.ParcelImpl
 
-# End of content from C:\Users\pinb4\.gradle\caches\transforms-3\5f0273643ba3542b2b112ca303ebbf53\transformed\versionedparcelable-1.0.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pinb4\.gradle\caches\transforms-3\1eff66791c7fd1aaa21f23d68331f1b2\transformed\lifecycle-runtime-2.0.0\proguard.txt
+# End of content from /Users/saimanchen/.gradle/caches/transforms-3/5f0273643ba3542b2b112ca303ebbf53/transformed/versionedparcelable-1.0.0/proguard.txt
+# The proguard configuration file for the following section is /Users/saimanchen/.gradle/caches/transforms-3/1eff66791c7fd1aaa21f23d68331f1b2/transformed/lifecycle-runtime-2.0.0/proguard.txt
 -keepattributes *Annotation*
 
 -keepclassmembers enum androidx.lifecycle.Lifecycle$Event {
@@ -310,8 +310,8 @@
 -keepclassmembers class ** {
     @androidx.lifecycle.OnLifecycleEvent *;
 }
-# End of content from C:\Users\pinb4\.gradle\caches\transforms-3\1eff66791c7fd1aaa21f23d68331f1b2\transformed\lifecycle-runtime-2.0.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pinb4\.gradle\caches\transforms-3\103daa43ce544c89b36048602ecdbfe6\transformed\lifecycle-viewmodel-2.0.0\proguard.txt
+# End of content from /Users/saimanchen/.gradle/caches/transforms-3/1eff66791c7fd1aaa21f23d68331f1b2/transformed/lifecycle-runtime-2.0.0/proguard.txt
+# The proguard configuration file for the following section is /Users/saimanchen/.gradle/caches/transforms-3/103daa43ce544c89b36048602ecdbfe6/transformed/lifecycle-viewmodel-2.0.0/proguard.txt
 -keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
     <init>();
 }
@@ -320,8 +320,8 @@
     <init>(android.app.Application);
 }
 
-# End of content from C:\Users\pinb4\.gradle\caches\transforms-3\103daa43ce544c89b36048602ecdbfe6\transformed\lifecycle-viewmodel-2.0.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pinb4\.gradle\caches\transforms-3\d29ebd6d839467e7c1e7d312fc93378f\transformed\rules\lib\META-INF\proguard\androidx-annotations.pro
+# End of content from /Users/saimanchen/.gradle/caches/transforms-3/103daa43ce544c89b36048602ecdbfe6/transformed/lifecycle-viewmodel-2.0.0/proguard.txt
+# The proguard configuration file for the following section is /Users/saimanchen/.gradle/caches/transforms-3/d29ebd6d839467e7c1e7d312fc93378f/transformed/rules/lib/META-INF/proguard/androidx-annotations.pro
 -keep @android.support.annotation.Keep class * {*;}
 
 -keepclasseswithmembers class * {
@@ -336,7 +336,7 @@
     @android.support.annotation.Keep <init>(...);
 }
 
-# End of content from C:\Users\pinb4\.gradle\caches\transforms-3\d29ebd6d839467e7c1e7d312fc93378f\transformed\rules\lib\META-INF\proguard\androidx-annotations.pro
+# End of content from /Users/saimanchen/.gradle/caches/transforms-3/d29ebd6d839467e7c1e7d312fc93378f/transformed/rules/lib/META-INF/proguard/androidx-annotations.pro
 # The proguard configuration file for the following section is <unknown>
 -ignorewarnings
 # End of content from <unknown>

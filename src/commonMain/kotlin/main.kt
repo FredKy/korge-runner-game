@@ -80,19 +80,67 @@ class Scene2 : Scene() {
 			println(gameTick)
 			println(now-start)
 		}
-		// tileable background
-		val tileset = TileSet(bitmap("assembly.png")
+
+		// layer 1 - background
+		val bg = image(bitmap("level_1_gradient_sky.png"))
+		addChild(bg)
+
+		// layer 2 - buildings back
+		val tileset1 = TileSet(bitmap("level_1_buildings_back.png")
 			.toBMP32()
 			.scaleLinear(1.0, 1.0).slice(), 480, 270)
-		val tilemap = tileMap(
+		val tilemap1 = tileMap(
 			Bitmap32(1,1),
 			repeatX = BaseTileMap.Repeat.REPEAT,
-			tileset = tileset)
+			tileset = tileset1)
+
+		// layer 3 - buildings back
+		val tileset2 = TileSet(bitmap("level_1_buildings_middle.png")
+			.toBMP32()
+			.scaleLinear(1.0, 1.0).slice(), 480, 270)
+		val tilemap2 = tileMap(
+			Bitmap32(1,1),
+			repeatX = BaseTileMap.Repeat.REPEAT,
+			tileset = tileset2)
+
+		// layer 4 - buildings back
+		val tileset3 = TileSet(bitmap("level_1_buildings_front.png")
+			.toBMP32()
+			.scaleLinear(1.0, 1.0).slice(), 480, 270)
+		val tilemap3 = tileMap(
+			Bitmap32(1,1),
+			repeatX = BaseTileMap.Repeat.REPEAT,
+			tileset = tileset3)
+
+		// layer 5 - buildings back
+		val tileset4 = TileSet(bitmap("level_1_road.png")
+			.toBMP32()
+			.scaleLinear(1.0, 1.0).slice(), 480, 270)
+		val tilemap4 = tileMap(
+			Bitmap32(1,1),
+			repeatX = BaseTileMap.Repeat.REPEAT,
+			tileset = tileset4)
+
+		// layer 6 - buildings back
+		val tileset5 = TileSet(bitmap("level_1_road_lights_bg.png")
+			.toBMP32()
+			.scaleLinear(1.0, 1.0).slice(), 480, 270)
+		val tilemap5 = tileMap(
+			Bitmap32(1,1),
+			repeatX = BaseTileMap.Repeat.REPEAT,
+			tileset = tileset5)
+
+
+
 
 		launchImmediately {
 			frameBlock(144.timesPerSecond) {
 				while (dogAlive) {
-					tilemap.x -= 0.5
+					tilemap1.x -= 0.06
+					tilemap2.x -= 0.1
+					tilemap3.x -= 0.175
+					tilemap4.x -= 0.55
+					tilemap5.x -= 0.55
 					frame()
 				}
 			}
@@ -201,6 +249,24 @@ class Scene2 : Scene() {
 				}
 				if(views.input.keys[Key.DOWN] && dog.y < 238 ) {
 					dog.y += 3
+				}
+			}
+		}
+
+		// layer 7 - buildings back
+		val tileset6 = TileSet(bitmap("level_1_road_lights_fg.png")
+			.toBMP32()
+			.scaleLinear(1.0, 1.0).slice(), 480, 270)
+		val tilemap6 = tileMap(
+			Bitmap32(1,1),
+			repeatX = BaseTileMap.Repeat.REPEAT,
+			tileset = tileset6)
+
+		launchImmediately {
+			frameBlock(144.timesPerSecond) {
+				while (dogAlive) {
+					tilemap6.x -= 0.55
+					frame()
 				}
 			}
 		}

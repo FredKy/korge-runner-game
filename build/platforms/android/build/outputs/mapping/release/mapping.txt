@@ -1,7 +1,7 @@
 # compiler: R8
 # compiler_version: 3.0.73
 # min_api: 16
-# pg_map_id: 662d804
+# pg_map_id: d5e3174
 # common_typos_disable
 ConfigModule -> a:
     com.soywiz.korma.geom.Point windowSize -> k
@@ -333,62 +333,175 @@ Scene2 -> g:
     1:1:double com.soywiz.klock.DateTime$Companion.now-TZYpA4o():0 -> f
     1:1:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
     2:2:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
-    3:3:int com.soywiz.korge.view.tiles.TileSet.getWidth():0:0 -> f
+    3:3:void com.soywiz.korge.view.Container.addChild(com.soywiz.korge.view.View):0:0 -> f
     3:3:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
-    4:4:int com.soywiz.korge.view.tiles.TileSet.getHeight():0:0 -> f
-    4:4:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
-    5:5:com.soywiz.korma.geom.Point com.soywiz.korma.geom.Size$Companion.invoke-7xhM4bs(double,double):0:0 -> f
+    4:4:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
+    5:5:int com.soywiz.korge.view.tiles.TileSet.getWidth():0:0 -> f
     5:5:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
-    6:6:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
-    7:7:com.soywiz.kds.IntArray2 com.soywiz.korge.view.tiles.TileMapKt.toIntArray2(com.soywiz.korim.bitmap.Bitmap32):0:0 -> f
+    6:6:int com.soywiz.korge.view.tiles.TileSet.getHeight():0:0 -> f
+    6:6:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    7:7:com.soywiz.korma.geom.Point com.soywiz.korma.geom.Size$Companion.invoke-7xhM4bs(double,double):0:0 -> f
     7:7:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
-    8:8:int[] com.soywiz.korim.bitmap.Bitmap32.getData-67OFb34():0:0 -> f
-    8:8:com.soywiz.kds.IntArray2 com.soywiz.korge.view.tiles.TileMapKt.toIntArray2(com.soywiz.korim.bitmap.Bitmap32):0 -> f
-    8:8:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    8:8:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
     9:9:com.soywiz.kds.IntArray2 com.soywiz.korge.view.tiles.TileMapKt.toIntArray2(com.soywiz.korim.bitmap.Bitmap32):0:0 -> f
     9:9:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
-    10:10:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
-    11:11:void com.soywiz.korge.view.tiles.BaseTileMap.setRepeatX(com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0:0 -> f
-    11:11:com.soywiz.korge.view.tiles.BaseTileMap com.soywiz.korge.view.tiles.TileMapKt.repeat(com.soywiz.korge.view.tiles.BaseTileMap,com.soywiz.korge.view.tiles.BaseTileMap$Repeat,com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0 -> f
+    10:10:int[] com.soywiz.korim.bitmap.Bitmap32.getData-67OFb34():0:0 -> f
+    10:10:com.soywiz.kds.IntArray2 com.soywiz.korge.view.tiles.TileMapKt.toIntArray2(com.soywiz.korim.bitmap.Bitmap32):0 -> f
+    10:10:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    11:11:com.soywiz.kds.IntArray2 com.soywiz.korge.view.tiles.TileMapKt.toIntArray2(com.soywiz.korim.bitmap.Bitmap32):0:0 -> f
     11:11:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
-    12:12:void com.soywiz.korge.view.tiles.BaseTileMap.setRepeatY(com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0:0 -> f
-    12:12:com.soywiz.korge.view.tiles.BaseTileMap com.soywiz.korge.view.tiles.TileMapKt.repeat(com.soywiz.korge.view.tiles.BaseTileMap,com.soywiz.korge.view.tiles.BaseTileMap$Repeat,com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0 -> f
-    12:12:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
-    13:13:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
-    14:14:int com.soywiz.korim.color.Colors.getGOLD-GgZJj5U():0:0 -> f
+    12:12:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
+    13:13:void com.soywiz.korge.view.tiles.BaseTileMap.setRepeatX(com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0:0 -> f
+    13:13:com.soywiz.korge.view.tiles.BaseTileMap com.soywiz.korge.view.tiles.TileMapKt.repeat(com.soywiz.korge.view.tiles.BaseTileMap,com.soywiz.korge.view.tiles.BaseTileMap$Repeat,com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0 -> f
+    13:13:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    14:14:void com.soywiz.korge.view.tiles.BaseTileMap.setRepeatY(com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0:0 -> f
+    14:14:com.soywiz.korge.view.tiles.BaseTileMap com.soywiz.korge.view.tiles.TileMapKt.repeat(com.soywiz.korge.view.tiles.BaseTileMap,com.soywiz.korge.view.tiles.BaseTileMap$Repeat,com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0 -> f
     14:14:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
     15:15:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
-    16:16:void com.soywiz.korge.view.Container.plusAssign(com.soywiz.korge.view.View):0:0 -> f
-    16:16:com.soywiz.korge.view.View com.soywiz.korge.view.ContainerKt.addTo(com.soywiz.korge.view.View,com.soywiz.korge.view.Container):0 -> f
+    16:16:int com.soywiz.korge.view.tiles.TileSet.getWidth():0:0 -> f
     16:16:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
-    17:17:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
-    18:18:void com.soywiz.korge.view.Container.plusAssign(com.soywiz.korge.view.View):0:0 -> f
-    18:18:com.soywiz.korge.view.View com.soywiz.korge.view.ContainerKt.addTo(com.soywiz.korge.view.View,com.soywiz.korge.view.Container):0 -> f
+    17:17:int com.soywiz.korge.view.tiles.TileSet.getHeight():0:0 -> f
+    17:17:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    18:18:com.soywiz.korma.geom.Point com.soywiz.korma.geom.Size$Companion.invoke-7xhM4bs(double,double):0:0 -> f
     18:18:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
     19:19:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
-    20:20:int com.soywiz.korim.color.Colors.getWHITE-GgZJj5U():0:0 -> f
+    20:20:com.soywiz.kds.IntArray2 com.soywiz.korge.view.tiles.TileMapKt.toIntArray2(com.soywiz.korim.bitmap.Bitmap32):0:0 -> f
     20:20:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
-    21:21:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
-    22:22:com.soywiz.korim.text.TextAlignment com.soywiz.korim.text.TextAlignment.access$getTOP_LEFT$cp():0:0 -> f
-    22:22:com.soywiz.korim.text.TextAlignment com.soywiz.korim.text.TextAlignment$Companion.getTOP_LEFT():0 -> f
+    21:21:int[] com.soywiz.korim.bitmap.Bitmap32.getData-67OFb34():0:0 -> f
+    21:21:com.soywiz.kds.IntArray2 com.soywiz.korge.view.tiles.TileMapKt.toIntArray2(com.soywiz.korim.bitmap.Bitmap32):0 -> f
+    21:21:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    22:22:com.soywiz.kds.IntArray2 com.soywiz.korge.view.tiles.TileMapKt.toIntArray2(com.soywiz.korim.bitmap.Bitmap32):0:0 -> f
     22:22:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
     23:23:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
-    24:24:void com.soywiz.korge.view.Container.plusAssign(com.soywiz.korge.view.View):0:0 -> f
-    24:24:com.soywiz.korge.view.View com.soywiz.korge.view.ContainerKt.addTo(com.soywiz.korge.view.View,com.soywiz.korge.view.Container):0 -> f
+    24:24:void com.soywiz.korge.view.tiles.BaseTileMap.setRepeatX(com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0:0 -> f
+    24:24:com.soywiz.korge.view.tiles.BaseTileMap com.soywiz.korge.view.tiles.TileMapKt.repeat(com.soywiz.korge.view.tiles.BaseTileMap,com.soywiz.korge.view.tiles.BaseTileMap$Repeat,com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0 -> f
     24:24:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
-    25:25:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
-    26:26:void com.soywiz.korge.view.Container.plusAssign(com.soywiz.korge.view.View):0:0 -> f
-    26:26:com.soywiz.korge.view.View com.soywiz.korge.view.ContainerKt.addTo(com.soywiz.korge.view.View,com.soywiz.korge.view.Container):0 -> f
-    26:26:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
-    27:27:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
-    28:28:com.soywiz.korio.async.Signal com.soywiz.korge.input.MouseEvents.getClick():0:0 -> f
-    28:28:java.lang.Object Scene2$sceneInit$$inlined$onClick$1.get(java.lang.Object):0 -> f
+    25:25:void com.soywiz.korge.view.tiles.BaseTileMap.setRepeatY(com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0:0 -> f
+    25:25:com.soywiz.korge.view.tiles.BaseTileMap com.soywiz.korge.view.tiles.TileMapKt.repeat(com.soywiz.korge.view.tiles.BaseTileMap,com.soywiz.korge.view.tiles.BaseTileMap$Repeat,com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0 -> f
+    25:25:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    26:26:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
+    27:27:int com.soywiz.korge.view.tiles.TileSet.getWidth():0:0 -> f
+    27:27:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    28:28:int com.soywiz.korge.view.tiles.TileSet.getHeight():0:0 -> f
     28:28:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
-    29:29:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
-    30:30:com.soywiz.korio.async.Signal com.soywiz.korge.input.MouseEvents.getClick():0:0 -> f
-    30:30:java.lang.Object Scene2$sceneInit$$inlined$onClick$3.get(java.lang.Object):0 -> f
-    30:30:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
-    31:31:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
+    29:29:com.soywiz.korma.geom.Point com.soywiz.korma.geom.Size$Companion.invoke-7xhM4bs(double,double):0:0 -> f
+    29:29:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    30:30:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
+    31:31:com.soywiz.kds.IntArray2 com.soywiz.korge.view.tiles.TileMapKt.toIntArray2(com.soywiz.korim.bitmap.Bitmap32):0:0 -> f
+    31:31:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    32:32:int[] com.soywiz.korim.bitmap.Bitmap32.getData-67OFb34():0:0 -> f
+    32:32:com.soywiz.kds.IntArray2 com.soywiz.korge.view.tiles.TileMapKt.toIntArray2(com.soywiz.korim.bitmap.Bitmap32):0 -> f
+    32:32:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    33:33:com.soywiz.kds.IntArray2 com.soywiz.korge.view.tiles.TileMapKt.toIntArray2(com.soywiz.korim.bitmap.Bitmap32):0:0 -> f
+    33:33:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    34:34:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
+    35:35:void com.soywiz.korge.view.tiles.BaseTileMap.setRepeatX(com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0:0 -> f
+    35:35:com.soywiz.korge.view.tiles.BaseTileMap com.soywiz.korge.view.tiles.TileMapKt.repeat(com.soywiz.korge.view.tiles.BaseTileMap,com.soywiz.korge.view.tiles.BaseTileMap$Repeat,com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0 -> f
+    35:35:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    36:36:void com.soywiz.korge.view.tiles.BaseTileMap.setRepeatY(com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0:0 -> f
+    36:36:com.soywiz.korge.view.tiles.BaseTileMap com.soywiz.korge.view.tiles.TileMapKt.repeat(com.soywiz.korge.view.tiles.BaseTileMap,com.soywiz.korge.view.tiles.BaseTileMap$Repeat,com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0 -> f
+    36:36:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    37:37:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
+    38:38:int com.soywiz.korge.view.tiles.TileSet.getWidth():0:0 -> f
+    38:38:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    39:39:int com.soywiz.korge.view.tiles.TileSet.getHeight():0:0 -> f
+    39:39:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    40:40:com.soywiz.korma.geom.Point com.soywiz.korma.geom.Size$Companion.invoke-7xhM4bs(double,double):0:0 -> f
+    40:40:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    41:41:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
+    42:42:com.soywiz.kds.IntArray2 com.soywiz.korge.view.tiles.TileMapKt.toIntArray2(com.soywiz.korim.bitmap.Bitmap32):0:0 -> f
+    42:42:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    43:43:int[] com.soywiz.korim.bitmap.Bitmap32.getData-67OFb34():0:0 -> f
+    43:43:com.soywiz.kds.IntArray2 com.soywiz.korge.view.tiles.TileMapKt.toIntArray2(com.soywiz.korim.bitmap.Bitmap32):0 -> f
+    43:43:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    44:44:com.soywiz.kds.IntArray2 com.soywiz.korge.view.tiles.TileMapKt.toIntArray2(com.soywiz.korim.bitmap.Bitmap32):0:0 -> f
+    44:44:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    45:45:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
+    46:46:void com.soywiz.korge.view.tiles.BaseTileMap.setRepeatX(com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0:0 -> f
+    46:46:com.soywiz.korge.view.tiles.BaseTileMap com.soywiz.korge.view.tiles.TileMapKt.repeat(com.soywiz.korge.view.tiles.BaseTileMap,com.soywiz.korge.view.tiles.BaseTileMap$Repeat,com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0 -> f
+    46:46:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    47:47:void com.soywiz.korge.view.tiles.BaseTileMap.setRepeatY(com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0:0 -> f
+    47:47:com.soywiz.korge.view.tiles.BaseTileMap com.soywiz.korge.view.tiles.TileMapKt.repeat(com.soywiz.korge.view.tiles.BaseTileMap,com.soywiz.korge.view.tiles.BaseTileMap$Repeat,com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0 -> f
+    47:47:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    48:48:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
+    49:49:int com.soywiz.korge.view.tiles.TileSet.getWidth():0:0 -> f
+    49:49:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    50:50:int com.soywiz.korge.view.tiles.TileSet.getHeight():0:0 -> f
+    50:50:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    51:51:com.soywiz.korma.geom.Point com.soywiz.korma.geom.Size$Companion.invoke-7xhM4bs(double,double):0:0 -> f
+    51:51:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    52:52:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
+    53:53:com.soywiz.kds.IntArray2 com.soywiz.korge.view.tiles.TileMapKt.toIntArray2(com.soywiz.korim.bitmap.Bitmap32):0:0 -> f
+    53:53:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    54:54:int[] com.soywiz.korim.bitmap.Bitmap32.getData-67OFb34():0:0 -> f
+    54:54:com.soywiz.kds.IntArray2 com.soywiz.korge.view.tiles.TileMapKt.toIntArray2(com.soywiz.korim.bitmap.Bitmap32):0 -> f
+    54:54:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    55:55:com.soywiz.kds.IntArray2 com.soywiz.korge.view.tiles.TileMapKt.toIntArray2(com.soywiz.korim.bitmap.Bitmap32):0:0 -> f
+    55:55:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    56:56:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
+    57:57:void com.soywiz.korge.view.tiles.BaseTileMap.setRepeatX(com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0:0 -> f
+    57:57:com.soywiz.korge.view.tiles.BaseTileMap com.soywiz.korge.view.tiles.TileMapKt.repeat(com.soywiz.korge.view.tiles.BaseTileMap,com.soywiz.korge.view.tiles.BaseTileMap$Repeat,com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0 -> f
+    57:57:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    58:58:void com.soywiz.korge.view.tiles.BaseTileMap.setRepeatY(com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0:0 -> f
+    58:58:com.soywiz.korge.view.tiles.BaseTileMap com.soywiz.korge.view.tiles.TileMapKt.repeat(com.soywiz.korge.view.tiles.BaseTileMap,com.soywiz.korge.view.tiles.BaseTileMap$Repeat,com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0 -> f
+    58:58:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    59:59:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
+    60:60:int com.soywiz.korim.color.Colors.getGOLD-GgZJj5U():0:0 -> f
+    60:60:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    61:61:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
+    62:62:void com.soywiz.korge.view.Container.plusAssign(com.soywiz.korge.view.View):0:0 -> f
+    62:62:com.soywiz.korge.view.View com.soywiz.korge.view.ContainerKt.addTo(com.soywiz.korge.view.View,com.soywiz.korge.view.Container):0 -> f
+    62:62:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    63:63:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
+    64:64:void com.soywiz.korge.view.Container.plusAssign(com.soywiz.korge.view.View):0:0 -> f
+    64:64:com.soywiz.korge.view.View com.soywiz.korge.view.ContainerKt.addTo(com.soywiz.korge.view.View,com.soywiz.korge.view.Container):0 -> f
+    64:64:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    65:65:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
+    66:66:int com.soywiz.korge.view.tiles.TileSet.getWidth():0:0 -> f
+    66:66:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    67:67:int com.soywiz.korge.view.tiles.TileSet.getHeight():0:0 -> f
+    67:67:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    68:68:com.soywiz.korma.geom.Point com.soywiz.korma.geom.Size$Companion.invoke-7xhM4bs(double,double):0:0 -> f
+    68:68:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    69:69:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
+    70:70:com.soywiz.kds.IntArray2 com.soywiz.korge.view.tiles.TileMapKt.toIntArray2(com.soywiz.korim.bitmap.Bitmap32):0:0 -> f
+    70:70:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    71:71:int[] com.soywiz.korim.bitmap.Bitmap32.getData-67OFb34():0:0 -> f
+    71:71:com.soywiz.kds.IntArray2 com.soywiz.korge.view.tiles.TileMapKt.toIntArray2(com.soywiz.korim.bitmap.Bitmap32):0 -> f
+    71:71:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    72:72:com.soywiz.kds.IntArray2 com.soywiz.korge.view.tiles.TileMapKt.toIntArray2(com.soywiz.korim.bitmap.Bitmap32):0:0 -> f
+    72:72:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    73:73:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
+    74:74:void com.soywiz.korge.view.tiles.BaseTileMap.setRepeatX(com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0:0 -> f
+    74:74:com.soywiz.korge.view.tiles.BaseTileMap com.soywiz.korge.view.tiles.TileMapKt.repeat(com.soywiz.korge.view.tiles.BaseTileMap,com.soywiz.korge.view.tiles.BaseTileMap$Repeat,com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0 -> f
+    74:74:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    75:75:void com.soywiz.korge.view.tiles.BaseTileMap.setRepeatY(com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0:0 -> f
+    75:75:com.soywiz.korge.view.tiles.BaseTileMap com.soywiz.korge.view.tiles.TileMapKt.repeat(com.soywiz.korge.view.tiles.BaseTileMap,com.soywiz.korge.view.tiles.BaseTileMap$Repeat,com.soywiz.korge.view.tiles.BaseTileMap$Repeat):0 -> f
+    75:75:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    76:76:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
+    77:77:int com.soywiz.korim.color.Colors.getWHITE-GgZJj5U():0:0 -> f
+    77:77:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    78:78:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
+    79:79:com.soywiz.korim.text.TextAlignment com.soywiz.korim.text.TextAlignment.access$getTOP_LEFT$cp():0:0 -> f
+    79:79:com.soywiz.korim.text.TextAlignment com.soywiz.korim.text.TextAlignment$Companion.getTOP_LEFT():0 -> f
+    79:79:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    80:80:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
+    81:81:void com.soywiz.korge.view.Container.plusAssign(com.soywiz.korge.view.View):0:0 -> f
+    81:81:com.soywiz.korge.view.View com.soywiz.korge.view.ContainerKt.addTo(com.soywiz.korge.view.View,com.soywiz.korge.view.Container):0 -> f
+    81:81:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    82:82:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
+    83:83:void com.soywiz.korge.view.Container.plusAssign(com.soywiz.korge.view.View):0:0 -> f
+    83:83:com.soywiz.korge.view.View com.soywiz.korge.view.ContainerKt.addTo(com.soywiz.korge.view.View,com.soywiz.korge.view.Container):0 -> f
+    83:83:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    84:84:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
+    85:85:com.soywiz.korio.async.Signal com.soywiz.korge.input.MouseEvents.getClick():0:0 -> f
+    85:85:java.lang.Object Scene2$sceneInit$$inlined$onClick$1.get(java.lang.Object):0 -> f
+    85:85:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    86:86:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
+    87:87:com.soywiz.korio.async.Signal com.soywiz.korge.input.MouseEvents.getClick():0:0 -> f
+    87:87:java.lang.Object Scene2$sceneInit$$inlined$onClick$3.get(java.lang.Object):0 -> f
+    87:87:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0 -> f
+    88:88:java.lang.Object sceneInit(com.soywiz.korge.view.Container,kotlin.coroutines.Continuation):0:0 -> f
 Scene2$sceneInit$$inlined$onClick$1 -> g$a:
     Scene2$sceneInit$$inlined$onClick$1 INSTANCE -> n
     1:1:com.soywiz.korio.async.Signal com.soywiz.korge.input.MouseEvents.getClick():0:0 -> get
@@ -431,12 +544,14 @@ Scene2$sceneInit$$inlined$onClick$4$1 -> i:
     2:2:java.lang.Object invoke(kotlin.coroutines.Continuation):0:0 -> n
     2:2:java.lang.Object invoke(java.lang.Object):0 -> n
     java.lang.Object invokeSuspend(java.lang.Object) -> s
-Scene2$sceneInit$1 -> g$f:
+Scene2$sceneInit$1 -> g$g:
     java.lang.Object L$0 -> k
-    Scene2 this$0 -> s
-    java.lang.Object result -> r
+    Scene2 this$0 -> u
+    java.lang.Object result -> t
+    java.lang.Object L$7 -> r
+    int label -> v
+    java.lang.Object L$8 -> s
     java.lang.Object L$5 -> p
-    int label -> t
     java.lang.Object L$6 -> q
     java.lang.Object L$3 -> n
     java.lang.Object L$4 -> o
@@ -462,7 +577,26 @@ Scene2$sceneInit$10$1 -> g$e$a:
     1:1:void invoke(com.soywiz.korge.animate.Animator):0:0 -> n
     1:1:java.lang.Object invoke(java.lang.Object):0 -> n
     2:2:java.lang.Object invoke(java.lang.Object):0:0 -> n
-Scene2$sceneInit$2 -> g$g:
+Scene2$sceneInit$11 -> g$f:
+    kotlin.jvm.internal.Ref$BooleanRef $dogAlive -> m
+    int label -> l
+    com.soywiz.korge.view.Container $this_sceneInit -> o
+    com.soywiz.korge.view.Sprite $dog -> n
+    kotlin.coroutines.Continuation create(java.lang.Object,kotlin.coroutines.Continuation) -> a
+    1:1:kotlin.coroutines.Continuation create(java.lang.Object,kotlin.coroutines.Continuation):0:0 -> h
+    1:1:java.lang.Object invoke(com.soywiz.korge.input.MouseEvents,kotlin.coroutines.Continuation):0 -> h
+    1:1:java.lang.Object invoke(java.lang.Object,java.lang.Object):0 -> h
+    2:2:java.lang.Object invoke(com.soywiz.korge.input.MouseEvents,kotlin.coroutines.Continuation):0:0 -> h
+    2:2:java.lang.Object invoke(java.lang.Object,java.lang.Object):0 -> h
+    1:1:double com.soywiz.korge.view.View.getY():0:0 -> s
+    1:1:java.lang.Object invokeSuspend(java.lang.Object):0 -> s
+    2:2:java.lang.Object invokeSuspend(java.lang.Object):0:0 -> s
+Scene2$sceneInit$11$1 -> g$f$a:
+    com.soywiz.korge.view.Sprite $dog -> i
+    1:1:void invoke(com.soywiz.korge.animate.Animator):0:0 -> n
+    1:1:java.lang.Object invoke(java.lang.Object):0 -> n
+    2:2:java.lang.Object invoke(java.lang.Object):0:0 -> n
+Scene2$sceneInit$2 -> g$h:
     double $start -> j
     kotlin.jvm.internal.Ref$IntRef $gameTick -> i
     1:1:void invoke-eeKXlv4(com.soywiz.korge.view.Container,double):0:0 -> h
@@ -479,33 +613,47 @@ Scene2$sceneInit$2 -> g$g:
     5:5:void invoke-eeKXlv4(com.soywiz.korge.view.Container,double):0:0 -> h
     5:5:java.lang.Object invoke(java.lang.Object,java.lang.Object):0 -> h
     6:6:java.lang.Object invoke(java.lang.Object,java.lang.Object):0:0 -> h
-Scene2$sceneInit$3 -> g$h:
+Scene2$sceneInit$3 -> g$i:
+    com.soywiz.korge.view.tiles.TileMap $tilemap5 -> s
     int label -> l
     kotlin.jvm.internal.Ref$BooleanRef $dogAlive -> n
-    com.soywiz.korge.view.tiles.TileMap $tilemap -> o
+    com.soywiz.korge.view.tiles.TileMap $tilemap4 -> r
+    com.soywiz.korge.view.tiles.TileMap $tilemap3 -> q
+    com.soywiz.korge.view.tiles.TileMap $tilemap2 -> p
+    com.soywiz.korge.view.tiles.TileMap $tilemap1 -> o
     com.soywiz.korge.view.Container $this_sceneInit -> m
     kotlin.coroutines.Continuation create(kotlin.coroutines.Continuation) -> i
-    1:1:kotlin.coroutines.Continuation create(kotlin.coroutines.Continuation):0:0 -> n
-    1:1:java.lang.Object invoke(kotlin.coroutines.Continuation):0 -> n
+    1:1:java.lang.Object invoke(kotlin.coroutines.Continuation):0:0 -> n
     1:1:java.lang.Object invoke(java.lang.Object):0 -> n
-    2:2:java.lang.Object invoke(kotlin.coroutines.Continuation):0:0 -> n
-    2:2:java.lang.Object invoke(java.lang.Object):0 -> n
     java.lang.Object invokeSuspend(java.lang.Object) -> s
-Scene2$sceneInit$3$1 -> g$h$a:
+Scene2$sceneInit$3$1 -> g$i$a:
+    com.soywiz.korge.view.tiles.TileMap $tilemap5 -> s
     int label -> l
     kotlin.jvm.internal.Ref$BooleanRef $dogAlive -> n
-    com.soywiz.korge.view.tiles.TileMap $tilemap -> o
+    com.soywiz.korge.view.tiles.TileMap $tilemap4 -> r
+    com.soywiz.korge.view.tiles.TileMap $tilemap3 -> q
+    com.soywiz.korge.view.tiles.TileMap $tilemap2 -> p
+    com.soywiz.korge.view.tiles.TileMap $tilemap1 -> o
     java.lang.Object L$0 -> m
     kotlin.coroutines.Continuation create(java.lang.Object,kotlin.coroutines.Continuation) -> a
-    1:1:kotlin.coroutines.Continuation create(java.lang.Object,kotlin.coroutines.Continuation):0:0 -> h
-    1:1:java.lang.Object invoke(com.soywiz.korge.time.FrameBlock,kotlin.coroutines.Continuation):0 -> h
+    1:1:java.lang.Object invoke(com.soywiz.korge.time.FrameBlock,kotlin.coroutines.Continuation):0:0 -> h
     1:1:java.lang.Object invoke(java.lang.Object,java.lang.Object):0 -> h
-    2:2:java.lang.Object invoke(com.soywiz.korge.time.FrameBlock,kotlin.coroutines.Continuation):0:0 -> h
-    2:2:java.lang.Object invoke(java.lang.Object,java.lang.Object):0 -> h
     1:1:double com.soywiz.korge.view.View.getX():0:0 -> s
     1:1:java.lang.Object invokeSuspend(java.lang.Object):0 -> s
     2:2:java.lang.Object invokeSuspend(java.lang.Object):0:0 -> s
-Scene2$sceneInit$4 -> g$i:
+    3:3:double com.soywiz.korge.view.View.getX():0:0 -> s
+    3:3:java.lang.Object invokeSuspend(java.lang.Object):0 -> s
+    4:4:java.lang.Object invokeSuspend(java.lang.Object):0:0 -> s
+    5:5:double com.soywiz.korge.view.View.getX():0:0 -> s
+    5:5:java.lang.Object invokeSuspend(java.lang.Object):0 -> s
+    6:6:java.lang.Object invokeSuspend(java.lang.Object):0:0 -> s
+    7:7:double com.soywiz.korge.view.View.getX():0:0 -> s
+    7:7:java.lang.Object invokeSuspend(java.lang.Object):0 -> s
+    8:8:java.lang.Object invokeSuspend(java.lang.Object):0:0 -> s
+    9:9:double com.soywiz.korge.view.View.getX():0:0 -> s
+    9:9:java.lang.Object invokeSuspend(java.lang.Object):0 -> s
+    10:10:java.lang.Object invokeSuspend(java.lang.Object):0:0 -> s
+Scene2$sceneInit$4 -> g$j:
     kotlin.jvm.internal.Ref$DoubleRef $shift -> i
     1:1:void invoke-eeKXlv4(com.soywiz.korge.view.Sprite,double):0:0 -> h
     1:1:java.lang.Object invoke(java.lang.Object,java.lang.Object):0 -> h
@@ -520,7 +668,7 @@ Scene2$sceneInit$4 -> g$i:
     5:5:void invoke-eeKXlv4(com.soywiz.korge.view.Sprite,double):0:0 -> h
     5:5:java.lang.Object invoke(java.lang.Object,java.lang.Object):0 -> h
     6:6:java.lang.Object invoke(java.lang.Object,java.lang.Object):0:0 -> h
-Scene2$sceneInit$5 -> g$j:
+Scene2$sceneInit$5 -> g$k:
     Scene2$sceneInit$5 INSTANCE -> i
     1:1:void invoke-eeKXlv4(com.soywiz.korge.view.SolidRect,double):0:0 -> h
     1:1:java.lang.Object invoke(java.lang.Object,java.lang.Object):0 -> h
@@ -530,7 +678,7 @@ Scene2$sceneInit$5 -> g$j:
     3:3:void invoke-eeKXlv4(com.soywiz.korge.view.SolidRect,double):0:0 -> h
     3:3:java.lang.Object invoke(java.lang.Object,java.lang.Object):0 -> h
     4:4:java.lang.Object invoke(java.lang.Object,java.lang.Object):0:0 -> h
-Scene2$sceneInit$6 -> g$k:
+Scene2$sceneInit$6 -> g$l:
     kotlin.jvm.internal.Ref$ObjectRef $obstacles -> i
     com.soywiz.korge.view.Sprite $dog -> m
     kotlin.jvm.internal.Ref$BooleanRef $dogAlive -> j
@@ -699,7 +847,33 @@ Scene2$sceneInit$6$2 -> k:
     9:9:com.soywiz.korge.scene.Transition com.soywiz.korge.scene.SceneContainer.getDefaultTransition():0:0 -> s
     9:9:java.lang.Object invokeSuspend(java.lang.Object):0 -> s
     10:10:java.lang.Object invokeSuspend(java.lang.Object):0:0 -> s
-Scene2$sceneInit$7 -> g$l:
+Scene2$sceneInit$7 -> g$m:
+    int label -> l
+    kotlin.jvm.internal.Ref$BooleanRef $dogAlive -> n
+    com.soywiz.korge.view.tiles.TileMap $tilemap6 -> o
+    com.soywiz.korge.view.Container $this_sceneInit -> m
+    kotlin.coroutines.Continuation create(kotlin.coroutines.Continuation) -> i
+    1:1:kotlin.coroutines.Continuation create(kotlin.coroutines.Continuation):0:0 -> n
+    1:1:java.lang.Object invoke(kotlin.coroutines.Continuation):0 -> n
+    1:1:java.lang.Object invoke(java.lang.Object):0 -> n
+    2:2:java.lang.Object invoke(kotlin.coroutines.Continuation):0:0 -> n
+    2:2:java.lang.Object invoke(java.lang.Object):0 -> n
+    java.lang.Object invokeSuspend(java.lang.Object) -> s
+Scene2$sceneInit$7$1 -> g$m$a:
+    int label -> l
+    kotlin.jvm.internal.Ref$BooleanRef $dogAlive -> n
+    com.soywiz.korge.view.tiles.TileMap $tilemap6 -> o
+    java.lang.Object L$0 -> m
+    kotlin.coroutines.Continuation create(java.lang.Object,kotlin.coroutines.Continuation) -> a
+    1:1:kotlin.coroutines.Continuation create(java.lang.Object,kotlin.coroutines.Continuation):0:0 -> h
+    1:1:java.lang.Object invoke(com.soywiz.korge.time.FrameBlock,kotlin.coroutines.Continuation):0 -> h
+    1:1:java.lang.Object invoke(java.lang.Object,java.lang.Object):0 -> h
+    2:2:java.lang.Object invoke(com.soywiz.korge.time.FrameBlock,kotlin.coroutines.Continuation):0:0 -> h
+    2:2:java.lang.Object invoke(java.lang.Object,java.lang.Object):0 -> h
+    1:1:double com.soywiz.korge.view.View.getX():0:0 -> s
+    1:1:java.lang.Object invokeSuspend(java.lang.Object):0 -> s
+    2:2:java.lang.Object invokeSuspend(java.lang.Object):0:0 -> s
+Scene2$sceneInit$8 -> g$n:
     com.soywiz.korge.view.Sprite $dog -> i
     1:1:void invoke-eeKXlv4(com.soywiz.korge.view.Text,double):0:0 -> h
     1:1:java.lang.Object invoke(java.lang.Object,java.lang.Object):0 -> h
@@ -712,7 +886,7 @@ Scene2$sceneInit$7 -> g$l:
     4:4:void invoke-eeKXlv4(com.soywiz.korge.view.Text,double):0 -> h
     4:4:java.lang.Object invoke(java.lang.Object,java.lang.Object):0 -> h
     5:5:java.lang.Object invoke(java.lang.Object,java.lang.Object):0:0 -> h
-Scene2$sceneInit$8 -> g$m:
+Scene2$sceneInit$9 -> g$o:
     com.soywiz.korge.view.Sprite $dog -> i
     1:1:void invoke-eeKXlv4(com.soywiz.korge.view.Text,double):0:0 -> h
     1:1:java.lang.Object invoke(java.lang.Object,java.lang.Object):0 -> h
@@ -725,25 +899,6 @@ Scene2$sceneInit$8 -> g$m:
     4:4:void invoke-eeKXlv4(com.soywiz.korge.view.Text,double):0 -> h
     4:4:java.lang.Object invoke(java.lang.Object,java.lang.Object):0 -> h
     5:5:java.lang.Object invoke(java.lang.Object,java.lang.Object):0:0 -> h
-Scene2$sceneInit$9 -> g$n:
-    kotlin.jvm.internal.Ref$BooleanRef $dogAlive -> m
-    int label -> l
-    com.soywiz.korge.view.Container $this_sceneInit -> o
-    com.soywiz.korge.view.Sprite $dog -> n
-    kotlin.coroutines.Continuation create(java.lang.Object,kotlin.coroutines.Continuation) -> a
-    1:1:kotlin.coroutines.Continuation create(java.lang.Object,kotlin.coroutines.Continuation):0:0 -> h
-    1:1:java.lang.Object invoke(com.soywiz.korge.input.MouseEvents,kotlin.coroutines.Continuation):0 -> h
-    1:1:java.lang.Object invoke(java.lang.Object,java.lang.Object):0 -> h
-    2:2:java.lang.Object invoke(com.soywiz.korge.input.MouseEvents,kotlin.coroutines.Continuation):0:0 -> h
-    2:2:java.lang.Object invoke(java.lang.Object,java.lang.Object):0 -> h
-    1:1:double com.soywiz.korge.view.View.getY():0:0 -> s
-    1:1:java.lang.Object invokeSuspend(java.lang.Object):0 -> s
-    2:2:java.lang.Object invokeSuspend(java.lang.Object):0:0 -> s
-Scene2$sceneInit$9$1 -> g$n$a:
-    com.soywiz.korge.view.Sprite $dog -> i
-    1:1:void invoke(com.soywiz.korge.animate.Animator):0:0 -> n
-    1:1:java.lang.Object invoke(java.lang.Object):0 -> n
-    2:2:java.lang.Object invoke(java.lang.Object):0:0 -> n
 Scene3 -> l:
     1:1:com.soywiz.korge.view.View com.soywiz.korge.view.ViewKt.scale(com.soywiz.korge.view.View,double,double):0:0 -> f
     1:1:com.soywiz.korge.view.View com.soywiz.korge.view.ViewKt.scale$default(com.soywiz.korge.view.View,double,double,int,java.lang.Object):0 -> f

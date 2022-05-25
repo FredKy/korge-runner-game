@@ -24030,6 +24030,10 @@ Scene2$sceneInit$10$1:
     public final void invoke(com.soywiz.korge.animate.Animator)
 Scene2$sceneInit$10:
     public final java.lang.Object invoke(com.soywiz.korge.input.MouseEvents,kotlin.coroutines.Continuation)
+Scene2$sceneInit$11$1:
+    public final void invoke(com.soywiz.korge.animate.Animator)
+Scene2$sceneInit$11:
+    public final java.lang.Object invoke(com.soywiz.korge.input.MouseEvents,kotlin.coroutines.Continuation)
 Scene2$sceneInit$2:
     public final void invoke-eeKXlv4(com.soywiz.korge.view.Container)
 Scene2$sceneInit$3$1:
@@ -24048,14 +24052,14 @@ Scene2$sceneInit$6$2:
     public final java.lang.Object invoke(kotlin.coroutines.Continuation)
 Scene2$sceneInit$6:
     public final void invoke-eeKXlv4(com.soywiz.korge.view.Sprite)
+Scene2$sceneInit$7$1:
+    public final java.lang.Object invoke(com.soywiz.korge.time.FrameBlock,kotlin.coroutines.Continuation)
 Scene2$sceneInit$7:
-    public final void invoke-eeKXlv4(com.soywiz.korge.view.Text)
+    public final java.lang.Object invoke(kotlin.coroutines.Continuation)
 Scene2$sceneInit$8:
     public final void invoke-eeKXlv4(com.soywiz.korge.view.Text)
-Scene2$sceneInit$9$1:
-    public final void invoke(com.soywiz.korge.animate.Animator)
 Scene2$sceneInit$9:
-    public final java.lang.Object invoke(com.soywiz.korge.input.MouseEvents,kotlin.coroutines.Continuation)
+    public final void invoke-eeKXlv4(com.soywiz.korge.view.Text)
 Scene3$sceneInit$$inlined$onClick$2$1:
     public final java.lang.Object invoke(kotlin.coroutines.Continuation)
 Scene3$sceneInit$$inlined$onClick$2:
