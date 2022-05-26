@@ -13,11 +13,11 @@ let config = {
 
 // entry
 config.entry = {
-    main: ["C:\\Korge Projects\\korge-runner-game\\build\\js\\packages\\korge-runner-game\\kotlin\\korge-runner-game.js"]
+    main: ["F:\\Korge_projekt\\korge-runner-game\\build\\js\\packages\\korge-runner-game\\kotlin\\korge-runner-game.js"]
 };
 
 config.output = {
-    path: "C:\\Korge Projects\\korge-runner-game\\build\\distributions",
+    path: "F:\\Korge_projekt\\korge-runner-game\\build\\distributions",
     filename: (chunkData) => {
         return chunkData.chunk.name === 'main'
             ? "korge-runner-game.js"
@@ -44,7 +44,7 @@ config.ignoreWarnings = [/Failed to parse source map/]
     const handler = (percentage, message, ...args) => {
         const p = percentage * 100;
         let msg = `${Math.trunc(p / 10)}${Math.trunc(p % 10)}% ${message} ${args.join(' ')}`;
-        msg = msg.replace("C:\\Korge Projects\\korge-runner-game\\build\\js", '');;
+        msg = msg.replace("F:\\Korge_projekt\\korge-runner-game\\build\\js", '');;
         console.log(msg);
     };
 
@@ -66,7 +66,7 @@ config.ignoreWarnings = [/Failed to parse source map/]
     const util = require('util');
     const fs = require('fs');
     const evaluatedConfig = util.inspect(config, {showHidden: false, depth: null, compact: false});
-    fs.writeFile("C:\\Korge Projects\\korge-runner-game\\build\\reports\\webpack\\korge-runner-game\\webpack.config.evaluated.js", evaluatedConfig, function (err) {});
+    fs.writeFile("F:\\Korge_projekt\\korge-runner-game\\build\\reports\\webpack\\korge-runner-game\\webpack.config.evaluated.js", evaluatedConfig, function (err) {});
 })(config);
 
 module.exports = config

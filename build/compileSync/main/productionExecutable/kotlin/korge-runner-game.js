@@ -1103,16 +1103,16 @@
   _no_name_provided__447.prototype.constructor = _no_name_provided__447;
   _no_name_provided__448.prototype = Object.create(CoroutineImpl_0.prototype);
   _no_name_provided__448.prototype.constructor = _no_name_provided__448;
-  _no_name_provided__450.prototype = Object.create(CoroutineImpl_0.prototype);
-  _no_name_provided__450.prototype.constructor = _no_name_provided__450;
+  _no_name_provided__449.prototype = Object.create(CoroutineImpl_0.prototype);
+  _no_name_provided__449.prototype.constructor = _no_name_provided__449;
   _no_name_provided__451.prototype = Object.create(CoroutineImpl_0.prototype);
   _no_name_provided__451.prototype.constructor = _no_name_provided__451;
   _no_name_provided__453.prototype = Object.create(CoroutineImpl_0.prototype);
   _no_name_provided__453.prototype.constructor = _no_name_provided__453;
-  _no_name_provided__454.prototype = Object.create(CoroutineImpl_0.prototype);
-  _no_name_provided__454.prototype.constructor = _no_name_provided__454;
-  _no_name_provided__456.prototype = Object.create(CoroutineImpl_0.prototype);
-  _no_name_provided__456.prototype.constructor = _no_name_provided__456;
+  _no_name_provided__455.prototype = Object.create(CoroutineImpl_0.prototype);
+  _no_name_provided__455.prototype.constructor = _no_name_provided__455;
+  _no_name_provided__459.prototype = Object.create(CoroutineImpl_0.prototype);
+  _no_name_provided__459.prototype.constructor = _no_name_provided__459;
   _no_name_provided__462.prototype = Object.create(CoroutineImpl_0.prototype);
   _no_name_provided__462.prototype.constructor = _no_name_provided__462;
   _no_name_provided__464.prototype = Object.create(CoroutineImpl_0.prototype);
@@ -106398,9 +106398,13 @@
     kind: 'class',
     interfaces: []
   };
-  function _no_name_provided__445($dogAlive, $tilemap, resultContinuation) {
+  function _no_name_provided__445($dogAlive, $tilemap1, $tilemap2, $tilemap3, $tilemap4, $tilemap5, resultContinuation) {
     this._$dogAlive = $dogAlive;
-    this._$tilemap = $tilemap;
+    this._$tilemap1 = $tilemap1;
+    this._$tilemap2_1 = $tilemap2;
+    this._$tilemap3_1 = $tilemap3;
+    this._$tilemap4_1 = $tilemap4;
+    this._$tilemap5_1 = $tilemap5;
     CoroutineImpl_0.call(this, resultContinuation);
   }
   _no_name_provided__445.prototype.invoke_y4fx7b_k$ = function ($this$frameBlock, $cont) {
@@ -106428,8 +106432,16 @@
               this._state_1 = 3;
               continue $sm;
             }
-            var tmp0_this = this._$tilemap;
-            tmp0_this._set_x__okcceq_k$(tmp0_this._get_x__0_k$() - 0.5);
+            var tmp0_this = this._$tilemap1;
+            tmp0_this._set_x__okcceq_k$(tmp0_this._get_x__0_k$() - 0.06);
+            var tmp1_this = this._$tilemap2_1;
+            tmp1_this._set_x__okcceq_k$(tmp1_this._get_x__0_k$() - 0.1);
+            var tmp2_this = this._$tilemap3_1;
+            tmp2_this._set_x__okcceq_k$(tmp2_this._get_x__0_k$() - 0.175);
+            var tmp3_this = this._$tilemap4_1;
+            tmp3_this._set_x__okcceq_k$(tmp3_this._get_x__0_k$() - 0.55);
+            var tmp4_this = this._$tilemap5_1;
+            tmp4_this._set_x__okcceq_k$(tmp4_this._get_x__0_k$() - 0.55);
             this._state_1 = 2;
             suspendResult = this._$this$frameBlock_0.frame_sv8swh_k$(this);
             if (suspendResult === _get_COROUTINE_SUSPENDED_()) {
@@ -106455,7 +106467,7 @@
      while (true);
   };
   _no_name_provided__445.prototype.create_x6skw4_k$ = function ($this$frameBlock, completion) {
-    var i = new _no_name_provided__445(this._$dogAlive, this._$tilemap, completion);
+    var i = new _no_name_provided__445(this._$dogAlive, this._$tilemap1, this._$tilemap2_1, this._$tilemap3_1, this._$tilemap4_1, this._$tilemap5_1, completion);
     i._$this$frameBlock_0 = $this$frameBlock;
     return i;
   };
@@ -106613,63 +106625,54 @@
     interfaces: [],
     suspendArity: [0]
   };
-  function _no_name_provided__449($dog) {
-    this._$dog_1 = $dog;
-  }
-  _no_name_provided__449.prototype.invoke_njrw7w_k$ = function ($this$animate) {
-    var tmp$ret$0;
-    $l$block: {
-      tmp$ret$0 = Companion_getInstance_14().fromMilliseconds_ttklb2_k$(500.0);
-      break $l$block;
-    }
-    var tmp = tmp$ret$0;
-    $this$animate.moveTo$default_gn2k90_k$(this._$dog_1, 60, 239, tmp, null, 8, null);
-  };
-  _no_name_provided__449.prototype.invoke_20e8_k$ = function (p1) {
-    this.invoke_njrw7w_k$(p1 instanceof Animator ? p1 : THROW_CCE());
-    return Unit_getInstance();
-  };
-  _no_name_provided__449.$metadata$ = {
-    kind: 'class',
-    interfaces: []
-  };
-  function _no_name_provided__450($this_sceneInit, $dog, resultContinuation) {
-    this._$this_sceneInit_0 = $this_sceneInit;
-    this._$dog_2 = $dog;
+  function _no_name_provided__449($dogAlive, $tilemap6, resultContinuation) {
+    this._$dogAlive_0 = $dogAlive;
+    this._$tilemap6 = $tilemap6;
     CoroutineImpl_0.call(this, resultContinuation);
   }
-  _no_name_provided__450.prototype.invoke_sv8swh_k$ = function ($cont) {
-    var tmp = this.create_s8oglw_k$($cont);
+  _no_name_provided__449.prototype.invoke_y4fx7b_k$ = function ($this$frameBlock, $cont) {
+    var tmp = this.create_x6skw4_k$($this$frameBlock, $cont);
     tmp._result_0 = Unit_getInstance();
     tmp._exception_0 = null;
     return tmp.doResume_0_k$();
   };
-  _no_name_provided__450.prototype.invoke_0_k$ = function ($cont) {
-    this.invoke_sv8swh_k$($cont);
+  _no_name_provided__449.prototype.invoke_20e8_k$ = function (p1, $cont) {
+    this.invoke_y4fx7b_k$(p1 instanceof FrameBlock ? p1 : THROW_CCE(), $cont);
     return Unit_getInstance();
   };
-  _no_name_provided__450.prototype.doResume_0_k$ = function () {
+  _no_name_provided__449.prototype.doResume_0_k$ = function () {
     var suspendResult = this._result_0;
     $sm: do
       try {
         var tmp = this._state_1;
         switch (tmp) {
           case 0:
-            this._exceptionState = 2;
+            this._exceptionState = 4;
             this._state_1 = 1;
-            suspendResult = animate$default(this._$this_sceneInit_0, null, 0.0, null, false, null, false, _no_name_provided_$factory_400(this._$dog_2), 55, null, this);
+            continue $sm;
+          case 1:
+            if (!this._$dogAlive_0._v) {
+              this._state_1 = 3;
+              continue $sm;
+            }
+            var tmp0_this = this._$tilemap6;
+            tmp0_this._set_x__okcceq_k$(tmp0_this._get_x__0_k$() - 0.55);
+            this._state_1 = 2;
+            suspendResult = this._$this$frameBlock_1.frame_sv8swh_k$(this);
             if (suspendResult === _get_COROUTINE_SUSPENDED_()) {
               return suspendResult;
             }
             continue $sm;
-          case 1:
-            Unit_getInstance();
-            return Unit_getInstance();
           case 2:
+            this._state_1 = 1;
+            continue $sm;
+          case 3:
+            return Unit_getInstance();
+          case 4:
             throw this._exception_0;
         }
       } catch ($p) {
-        if (this._exceptionState === 2) {
+        if (this._exceptionState === 4) {
           throw $p;
         } else {
           this._state_1 = this._exceptionState;
@@ -106678,17 +106681,38 @@
       }
      while (true);
   };
-  _no_name_provided__450.prototype.create_s8oglw_k$ = function (completion) {
-    var i = new _no_name_provided__450(this._$this_sceneInit_0, this._$dog_2, completion);
+  _no_name_provided__449.prototype.create_x6skw4_k$ = function ($this$frameBlock, completion) {
+    var i = new _no_name_provided__449(this._$dogAlive_0, this._$tilemap6, completion);
+    i._$this$frameBlock_1 = $this$frameBlock;
     return i;
+  };
+  _no_name_provided__449.$metadata$ = {
+    kind: 'class',
+    interfaces: [],
+    suspendArity: [1]
+  };
+  function _no_name_provided__450($dog) {
+    this._$dog_1 = $dog;
+  }
+  _no_name_provided__450.prototype.invoke_njrw7w_k$ = function ($this$animate) {
+    var tmp$ret$0;
+    $l$block: {
+      tmp$ret$0 = Companion_getInstance_14().fromMilliseconds_ttklb2_k$(500.0);
+      break $l$block;
+    }
+    var tmp = tmp$ret$0;
+    $this$animate.moveTo$default_gn2k90_k$(this._$dog_1, 60, 239, tmp, null, 8, null);
+  };
+  _no_name_provided__450.prototype.invoke_20e8_k$ = function (p1) {
+    this.invoke_njrw7w_k$(p1 instanceof Animator ? p1 : THROW_CCE());
+    return Unit_getInstance();
   };
   _no_name_provided__450.$metadata$ = {
     kind: 'class',
-    interfaces: [],
-    suspendArity: [0]
+    interfaces: []
   };
-  function _no_name_provided__451($tmp14_onClick_0, $it, resultContinuation) {
-    this._$tmp14_onClick_0 = $tmp14_onClick_0;
+  function _no_name_provided__451($tmp20_onClick_0, $it, resultContinuation) {
+    this._$tmp20_onClick_0 = $tmp20_onClick_0;
     this._$it_0 = $it;
     CoroutineImpl_0.call(this, resultContinuation);
   }
@@ -106711,7 +106735,7 @@
           case 0:
             this._exceptionState = 2;
             this._state_1 = 1;
-            suspendResult = this._$tmp14_onClick_0(this._$it_0, this);
+            suspendResult = this._$tmp20_onClick_0(this._$it_0, this);
             if (suspendResult === _get_COROUTINE_SUSPENDED_()) {
               return suspendResult;
             }
@@ -106732,7 +106756,7 @@
      while (true);
   };
   _no_name_provided__451.prototype.create_s8oglw_k$ = function (completion) {
-    var i = new _no_name_provided__451(this._$tmp14_onClick_0, this._$it_0, completion);
+    var i = new _no_name_provided__451(this._$tmp20_onClick_0, this._$it_0, completion);
     return i;
   };
   _no_name_provided__451.$metadata$ = {
@@ -106741,7 +106765,7 @@
     suspendArity: [0]
   };
   function _no_name_provided__452($dog) {
-    this._$dog_3 = $dog;
+    this._$dog_2 = $dog;
   }
   _no_name_provided__452.prototype.invoke_njrw7w_k$ = function ($this$animate) {
     var tmp$ret$0;
@@ -106750,7 +106774,7 @@
       break $l$block;
     }
     var tmp = tmp$ret$0;
-    $this$animate.moveTo$default_gn2k90_k$(this._$dog_3, 60, 206, tmp, null, 8, null);
+    $this$animate.moveTo$default_gn2k90_k$(this._$dog_2, 60, 206, tmp, null, 8, null);
   };
   _no_name_provided__452.prototype.invoke_20e8_k$ = function (p1) {
     this.invoke_njrw7w_k$(p1 instanceof Animator ? p1 : THROW_CCE());
@@ -106760,9 +106784,9 @@
     kind: 'class',
     interfaces: []
   };
-  function _no_name_provided__453($this_sceneInit, $dog, resultContinuation) {
-    this._$this_sceneInit_1 = $this_sceneInit;
-    this._$dog_4 = $dog;
+  function _no_name_provided__453($tmp21_onClick_0, $it, resultContinuation) {
+    this._$tmp21_onClick_0 = $tmp21_onClick_0;
+    this._$it_1 = $it;
     CoroutineImpl_0.call(this, resultContinuation);
   }
   _no_name_provided__453.prototype.invoke_sv8swh_k$ = function ($cont) {
@@ -106784,13 +106808,12 @@
           case 0:
             this._exceptionState = 2;
             this._state_1 = 1;
-            suspendResult = animate$default(this._$this_sceneInit_1, null, 0.0, null, false, null, false, _no_name_provided_$factory_403(this._$dog_4), 55, null, this);
+            suspendResult = this._$tmp21_onClick_0(this._$it_1, this);
             if (suspendResult === _get_COROUTINE_SUSPENDED_()) {
               return suspendResult;
             }
             continue $sm;
           case 1:
-            Unit_getInstance();
             return Unit_getInstance();
           case 2:
             throw this._exception_0;
@@ -106806,7 +106829,7 @@
      while (true);
   };
   _no_name_provided__453.prototype.create_s8oglw_k$ = function (completion) {
-    var i = new _no_name_provided__453(this._$this_sceneInit_1, this._$dog_4, completion);
+    var i = new _no_name_provided__453(this._$tmp21_onClick_0, this._$it_1, completion);
     return i;
   };
   _no_name_provided__453.$metadata$ = {
@@ -106814,95 +106837,46 @@
     interfaces: [],
     suspendArity: [0]
   };
-  function _no_name_provided__454($tmp15_onClick_0, $it, resultContinuation) {
-    this._$tmp15_onClick_0 = $tmp15_onClick_0;
-    this._$it_1 = $it;
-    CoroutineImpl_0.call(this, resultContinuation);
-  }
-  _no_name_provided__454.prototype.invoke_sv8swh_k$ = function ($cont) {
-    var tmp = this.create_s8oglw_k$($cont);
-    tmp._result_0 = Unit_getInstance();
-    tmp._exception_0 = null;
-    return tmp.doResume_0_k$();
-  };
-  _no_name_provided__454.prototype.invoke_0_k$ = function ($cont) {
-    this.invoke_sv8swh_k$($cont);
-    return Unit_getInstance();
-  };
-  _no_name_provided__454.prototype.doResume_0_k$ = function () {
-    var suspendResult = this._result_0;
-    $sm: do
-      try {
-        var tmp = this._state_1;
-        switch (tmp) {
-          case 0:
-            this._exceptionState = 2;
-            this._state_1 = 1;
-            suspendResult = this._$tmp15_onClick_0(this._$it_1, this);
-            if (suspendResult === _get_COROUTINE_SUSPENDED_()) {
-              return suspendResult;
-            }
-            continue $sm;
-          case 1:
-            return Unit_getInstance();
-          case 2:
-            throw this._exception_0;
-        }
-      } catch ($p) {
-        if (this._exceptionState === 2) {
-          throw $p;
-        } else {
-          this._state_1 = this._exceptionState;
-          this._exception_0 = $p;
-        }
-      }
-     while (true);
-  };
-  _no_name_provided__454.prototype.create_s8oglw_k$ = function (completion) {
-    var i = new _no_name_provided__454(this._$tmp15_onClick_0, this._$it_1, completion);
-    return i;
-  };
-  _no_name_provided__454.$metadata$ = {
-    kind: 'class',
-    interfaces: [],
-    suspendArity: [0]
-  };
-  function _no_name_provided__455($gameTick, $start) {
+  function _no_name_provided__454($gameTick, $start) {
     this._$gameTick = $gameTick;
     this._$start = $start;
   }
-  _no_name_provided__455.prototype.invoke_e9wmmy_k$ = function ($this$addUpdater, it) {
+  _no_name_provided__454.prototype.invoke_e9wmmy_k$ = function ($this$addUpdater, time) {
     var now = Companion_getInstance_12().now_utobi1_k$();
     this._$gameTick._v = this._$gameTick._v + 1 | 0;
     println(this._$gameTick._v);
     println(new TimeSpan(DateTime__minus_impl(now, this._$start)));
   };
-  _no_name_provided__455.prototype.invoke_osx4an_k$ = function (p1, p2) {
+  _no_name_provided__454.prototype.invoke_osx4an_k$ = function (p1, p2) {
     var tmp = p1 instanceof Container ? p1 : THROW_CCE();
     this.invoke_e9wmmy_k$(tmp, p2 instanceof TimeSpan ? p2._milliseconds : THROW_CCE());
     return Unit_getInstance();
   };
-  _no_name_provided__455.$metadata$ = {
+  _no_name_provided__454.$metadata$ = {
     kind: 'class',
     interfaces: []
   };
-  function _no_name_provided__456($this_sceneInit, $dogAlive, $tilemap, resultContinuation) {
-    this._$this_sceneInit_2 = $this_sceneInit;
-    this._$dogAlive_0 = $dogAlive;
-    this._$tilemap_0 = $tilemap;
+  function _no_name_provided__455($this_sceneInit, $dogAlive, $tilemap1, $tilemap2, $tilemap3, $tilemap4, $tilemap5, resultContinuation) {
+    this._$this_sceneInit_0 = $this_sceneInit;
+    this._$dogAlive_1 = $dogAlive;
+    this._$tilemap1_0 = $tilemap1;
+    this._$tilemap2_2 = $tilemap2;
+    this._$tilemap3_2 = $tilemap3;
+    this._$tilemap4_2 = $tilemap4;
+    this._$tilemap5_2 = $tilemap5;
     CoroutineImpl_0.call(this, resultContinuation);
   }
-  _no_name_provided__456.prototype.invoke_sv8swh_k$ = function ($cont) {
+  _no_name_provided__455.prototype.invoke_sv8swh_k$ = function ($cont) {
     var tmp = this.create_s8oglw_k$($cont);
     tmp._result_0 = Unit_getInstance();
     tmp._exception_0 = null;
     return tmp.doResume_0_k$();
   };
-  _no_name_provided__456.prototype.invoke_0_k$ = function ($cont) {
+  _no_name_provided__455.prototype.invoke_0_k$ = function ($cont) {
     this.invoke_sv8swh_k$($cont);
     return Unit_getInstance();
   };
-  _no_name_provided__456.prototype.doResume_0_k$ = function () {
+  _no_name_provided__455.prototype.doResume_0_k$ = function () {
     var suspendResult = this._result_0;
     $sm: do
       try {
@@ -106912,7 +106886,7 @@
             this._exceptionState = 2;
             this._state_1 = 1;
             var tmp_0 = _get_timesPerSecond_(144);
-            suspendResult = frameBlock(this._$this_sceneInit_2, tmp_0, _no_name_provided_$factory_396(this._$dogAlive_0, this._$tilemap_0, null), this);
+            suspendResult = frameBlock(this._$this_sceneInit_0, tmp_0, _no_name_provided_$factory_396(this._$dogAlive_1, this._$tilemap1_0, this._$tilemap2_2, this._$tilemap3_2, this._$tilemap4_2, this._$tilemap5_2, null), this);
             if (suspendResult === _get_COROUTINE_SUSPENDED_()) {
               return suspendResult;
             }
@@ -106932,19 +106906,19 @@
       }
      while (true);
   };
-  _no_name_provided__456.prototype.create_s8oglw_k$ = function (completion) {
-    var i = new _no_name_provided__456(this._$this_sceneInit_2, this._$dogAlive_0, this._$tilemap_0, completion);
+  _no_name_provided__455.prototype.create_s8oglw_k$ = function (completion) {
+    var i = new _no_name_provided__455(this._$this_sceneInit_0, this._$dogAlive_1, this._$tilemap1_0, this._$tilemap2_2, this._$tilemap3_2, this._$tilemap4_2, this._$tilemap5_2, completion);
     return i;
   };
-  _no_name_provided__456.$metadata$ = {
+  _no_name_provided__455.$metadata$ = {
     kind: 'class',
     interfaces: [],
     suspendArity: [0]
   };
-  function _no_name_provided__457($shift) {
+  function _no_name_provided__456($shift) {
     this._$shift = $shift;
   }
-  _no_name_provided__457.prototype.invoke_o0m8s6_k$ = function ($this$addUpdater, it) {
+  _no_name_provided__456.prototype.invoke_o0m8s6_k$ = function ($this$addUpdater, it) {
     var tmp0_this = $this$addUpdater;
     tmp0_this._set_x__okcceq_k$(tmp0_this._get_x__0_k$() - 2);
     this._$shift._v = this._$shift._v + 0.01;
@@ -106958,45 +106932,45 @@
     }
     tmp1_this._set_y__okcceq_k$(tmp + tmp$ret$0);
   };
-  _no_name_provided__457.prototype.invoke_osx4an_k$ = function (p1, p2) {
+  _no_name_provided__456.prototype.invoke_osx4an_k$ = function (p1, p2) {
     var tmp = p1 instanceof Sprite ? p1 : THROW_CCE();
     this.invoke_o0m8s6_k$(tmp, p2 instanceof TimeSpan ? p2._milliseconds : THROW_CCE());
+    return Unit_getInstance();
+  };
+  _no_name_provided__456.$metadata$ = {
+    kind: 'class',
+    interfaces: []
+  };
+  function _no_name_provided__457() {
+  }
+  _no_name_provided__457.prototype.invoke_65f5as_k$ = function ($this$addUpdater, it) {
+    var tmp0_this = $this$addUpdater;
+    tmp0_this._set_x__okcceq_k$(tmp0_this._get_x__0_k$() - 2);
+  };
+  _no_name_provided__457.prototype.invoke_osx4an_k$ = function (p1, p2) {
+    var tmp = p1 instanceof SolidRect ? p1 : THROW_CCE();
+    this.invoke_65f5as_k$(tmp, p2 instanceof TimeSpan ? p2._milliseconds : THROW_CCE());
     return Unit_getInstance();
   };
   _no_name_provided__457.$metadata$ = {
     kind: 'class',
     interfaces: []
   };
-  function _no_name_provided__458() {
-  }
-  _no_name_provided__458.prototype.invoke_65f5as_k$ = function ($this$addUpdater, it) {
-    var tmp0_this = $this$addUpdater;
-    tmp0_this._set_x__okcceq_k$(tmp0_this._get_x__0_k$() - 2);
-  };
-  _no_name_provided__458.prototype.invoke_osx4an_k$ = function (p1, p2) {
-    var tmp = p1 instanceof SolidRect ? p1 : THROW_CCE();
-    this.invoke_65f5as_k$(tmp, p2 instanceof TimeSpan ? p2._milliseconds : THROW_CCE());
-    return Unit_getInstance();
-  };
-  _no_name_provided__458.$metadata$ = {
-    kind: 'class',
-    interfaces: []
-  };
-  function _no_name_provided__459($obstacles, $dogAlive, $deathAnimation, this$0, $dog) {
+  function _no_name_provided__458($obstacles, $dogAlive, $deathAnimation, this$0, $dog) {
     this._$obstacles = $obstacles;
-    this._$dogAlive_1 = $dogAlive;
+    this._$dogAlive_2 = $dogAlive;
     this._$deathAnimation = $deathAnimation;
     this._this$0_121 = this$0;
-    this._$dog_5 = $dog;
+    this._$dog_3 = $dog;
   }
-  _no_name_provided__459.prototype.invoke_o0m8s6_k$ = function ($this$addUpdater, it) {
+  _no_name_provided__458.prototype.invoke_o0m8s6_k$ = function ($this$addUpdater, it) {
     var coll = 0;
     var tmp = this._$obstacles._v;
     if (collidesWith$default($this$addUpdater, tmp, null, 2, null)) {
       coll = coll + 1 | 0;
       println('Collision: ' + coll);
-      if (this._$dogAlive_1._v) {
-        this._$dogAlive_1._v = false;
+      if (this._$dogAlive_2._v) {
+        this._$dogAlive_2._v = false;
         var tmp$ret$0;
         $l$block: {
           tmp$ret$0 = Companion_getInstance_14().fromMilliseconds_ttklb2_k$(200.0);
@@ -107004,34 +106978,89 @@
         }
         var tmp_0 = tmp$ret$0;
         $this$addUpdater.playAnimation$default_p28t29_k$(0, this._$deathAnimation, tmp_0, 0, 3, false, 32, null);
-        launchImmediately_0(this._this$0_121, _no_name_provided_$factory_397($this$addUpdater, this._$dog_5, null));
+        launchImmediately_0(this._this$0_121, _no_name_provided_$factory_397($this$addUpdater, this._$dog_3, null));
         Unit_getInstance();
         launch_0(this._this$0_121, _no_name_provided_$factory_398($this$addUpdater, this._this$0_121, null));
         Unit_getInstance();
       }} else {
     }
-    if (this._$dogAlive_1._v) {
-      if (this._this$0_121._get_views__0_k$()._input_0._keys_0.get_dbfq2v_k$(Key_UP_getInstance()) ? this._$dog_5._get_y__0_k$() > 207.0 : false) {
-        var tmp0_this = this._$dog_5;
+    if (this._$dogAlive_2._v) {
+      if (this._this$0_121._get_views__0_k$()._input_0._keys_0.get_dbfq2v_k$(Key_UP_getInstance()) ? this._$dog_3._get_y__0_k$() > 207.0 : false) {
+        var tmp0_this = this._$dog_3;
         tmp0_this._set_y__okcceq_k$(tmp0_this._get_y__0_k$() - 3);
-      }if (this._this$0_121._get_views__0_k$()._input_0._keys_0.get_dbfq2v_k$(Key_DOWN_getInstance()) ? this._$dog_5._get_y__0_k$() < 238.0 : false) {
-        var tmp1_this = this._$dog_5;
+      }if (this._this$0_121._get_views__0_k$()._input_0._keys_0.get_dbfq2v_k$(Key_DOWN_getInstance()) ? this._$dog_3._get_y__0_k$() < 238.0 : false) {
+        var tmp1_this = this._$dog_3;
         tmp1_this._set_y__okcceq_k$(tmp1_this._get_y__0_k$() + 3);
       }}};
-  _no_name_provided__459.prototype.invoke_osx4an_k$ = function (p1, p2) {
+  _no_name_provided__458.prototype.invoke_osx4an_k$ = function (p1, p2) {
     var tmp = p1 instanceof Sprite ? p1 : THROW_CCE();
     this.invoke_o0m8s6_k$(tmp, p2 instanceof TimeSpan ? p2._milliseconds : THROW_CCE());
     return Unit_getInstance();
   };
-  _no_name_provided__459.$metadata$ = {
+  _no_name_provided__458.$metadata$ = {
     kind: 'class',
     interfaces: []
   };
+  function _no_name_provided__459($this_sceneInit, $dogAlive, $tilemap6, resultContinuation) {
+    this._$this_sceneInit_1 = $this_sceneInit;
+    this._$dogAlive_3 = $dogAlive;
+    this._$tilemap6_0 = $tilemap6;
+    CoroutineImpl_0.call(this, resultContinuation);
+  }
+  _no_name_provided__459.prototype.invoke_sv8swh_k$ = function ($cont) {
+    var tmp = this.create_s8oglw_k$($cont);
+    tmp._result_0 = Unit_getInstance();
+    tmp._exception_0 = null;
+    return tmp.doResume_0_k$();
+  };
+  _no_name_provided__459.prototype.invoke_0_k$ = function ($cont) {
+    this.invoke_sv8swh_k$($cont);
+    return Unit_getInstance();
+  };
+  _no_name_provided__459.prototype.doResume_0_k$ = function () {
+    var suspendResult = this._result_0;
+    $sm: do
+      try {
+        var tmp = this._state_1;
+        switch (tmp) {
+          case 0:
+            this._exceptionState = 2;
+            this._state_1 = 1;
+            var tmp_0 = _get_timesPerSecond_(144);
+            suspendResult = frameBlock(this._$this_sceneInit_1, tmp_0, _no_name_provided_$factory_400(this._$dogAlive_3, this._$tilemap6_0, null), this);
+            if (suspendResult === _get_COROUTINE_SUSPENDED_()) {
+              return suspendResult;
+            }
+            continue $sm;
+          case 1:
+            return Unit_getInstance();
+          case 2:
+            throw this._exception_0;
+        }
+      } catch ($p) {
+        if (this._exceptionState === 2) {
+          throw $p;
+        } else {
+          this._state_1 = this._exceptionState;
+          this._exception_0 = $p;
+        }
+      }
+     while (true);
+  };
+  _no_name_provided__459.prototype.create_s8oglw_k$ = function (completion) {
+    var i = new _no_name_provided__459(this._$this_sceneInit_1, this._$dogAlive_3, this._$tilemap6_0, completion);
+    return i;
+  };
+  _no_name_provided__459.$metadata$ = {
+    kind: 'class',
+    interfaces: [],
+    suspendArity: [0]
+  };
   function _no_name_provided__460($dog) {
-    this._$dog_6 = $dog;
+    this._$dog_4 = $dog;
   }
   _no_name_provided__460.prototype.invoke_acrkvm_k$ = function ($this$addUpdater, it) {
-    $this$addUpdater._set_text__a4enbm_k$('' + 'X: ' + round(this._$dog_6._get_x__0_k$()));
+    $this$addUpdater._set_text__a4enbm_k$('' + 'X: ' + round(this._$dog_4._get_x__0_k$()));
   };
   _no_name_provided__460.prototype.invoke_osx4an_k$ = function (p1, p2) {
     var tmp = p1 instanceof Text_2 ? p1 : THROW_CCE();
@@ -107043,10 +107072,10 @@
     interfaces: []
   };
   function _no_name_provided__461($dog) {
-    this._$dog_7 = $dog;
+    this._$dog_5 = $dog;
   }
   _no_name_provided__461.prototype.invoke_acrkvm_k$ = function ($this$addUpdater, it) {
-    $this$addUpdater._set_text__a4enbm_k$('' + 'Y: ' + round(this._$dog_7._get_y__0_k$()));
+    $this$addUpdater._set_text__a4enbm_k$('' + 'Y: ' + round(this._$dog_5._get_y__0_k$()));
   };
   _no_name_provided__461.prototype.invoke_osx4an_k$ = function (p1, p2) {
     var tmp = p1 instanceof Text_2 ? p1 : THROW_CCE();
@@ -107057,11 +107086,10 @@
     kind: 'class',
     interfaces: []
   };
-  function _no_name_provided__462($dogAlive, $dog, this$0, $this_sceneInit, resultContinuation) {
-    this._$dogAlive_2 = $dogAlive;
-    this._$dog_8 = $dog;
-    this._this$0_122 = this$0;
-    this._$this_sceneInit_3 = $this_sceneInit;
+  function _no_name_provided__462($dogAlive, $dog, $this_sceneInit, resultContinuation) {
+    this._$dogAlive_4 = $dogAlive;
+    this._$dog_6 = $dog;
+    this._$this_sceneInit_2 = $this_sceneInit;
     CoroutineImpl_0.call(this, resultContinuation);
   }
   _no_name_provided__462.prototype.invoke_nn0jqo_k$ = function (it, $cont) {
@@ -107079,22 +107107,50 @@
     $sm: do
       try {
         var tmp = this._state_1;
-        if (tmp === 0) {
-          this._exceptionState = 1;
-          if (this._$dogAlive_2._v) {
-            if (round(this._$dog_8._get_y__0_k$()) === 206.0) {
-              launchImmediately_0(this._this$0_122, _no_name_provided_$factory_401(this._$this_sceneInit_3, this._$dog_8, null));
-              Unit_getInstance();
-            }}return Unit_getInstance();
-        } else if (tmp === 1) {
-          throw this._exception_0;
-        }} catch ($p) {
-        throw $p;
+        switch (tmp) {
+          case 0:
+            this._exceptionState = 4;
+            if (this._$dogAlive_4._v) {
+              if (round(this._$dog_6._get_y__0_k$()) === 206.0) {
+                this._state_1 = 1;
+                suspendResult = animate$default(this._$this_sceneInit_2, null, 0.0, null, false, null, false, _no_name_provided_$factory_401(this._$dog_6), 55, null, this);
+                if (suspendResult === _get_COROUTINE_SUSPENDED_()) {
+                  return suspendResult;
+                }continue $sm;
+              } else {
+                this._state_1 = 2;
+                continue $sm;
+              }
+            } else {
+              this._state_1 = 3;
+              continue $sm;
+            }
+
+            break;
+          case 1:
+            Unit_getInstance();
+            this._state_1 = 2;
+            continue $sm;
+          case 2:
+            this._state_1 = 3;
+            continue $sm;
+          case 3:
+            return Unit_getInstance();
+          case 4:
+            throw this._exception_0;
+        }
+      } catch ($p) {
+        if (this._exceptionState === 4) {
+          throw $p;
+        } else {
+          this._state_1 = this._exceptionState;
+          this._exception_0 = $p;
+        }
       }
      while (true);
   };
   _no_name_provided__462.prototype.create_ow3isr_k$ = function (it, completion) {
-    var i = new _no_name_provided__462(this._$dogAlive_2, this._$dog_8, this._this$0_122, this._$this_sceneInit_3, completion);
+    var i = new _no_name_provided__462(this._$dogAlive_4, this._$dog_6, this._$this_sceneInit_2, completion);
     i._it_0 = it;
     return i;
   };
@@ -107103,13 +107159,13 @@
     interfaces: [],
     suspendArity: [1]
   };
-  function _no_name_provided__463($tmp1_safe_receiver_1_2, $tmp14_onClick_0) {
+  function _no_name_provided__463($tmp1_safe_receiver_1_2, $tmp20_onClick_0) {
     this._$tmp1_safe_receiver_1_2_0 = $tmp1_safe_receiver_1_2;
-    this._$tmp14_onClick_0_0 = $tmp14_onClick_0;
+    this._$tmp20_onClick_0_0 = $tmp20_onClick_0;
   }
   _no_name_provided__463.prototype.invoke_nn0jqo_k$ = function (it) {
     var tmp = this._$tmp1_safe_receiver_1_2_0._get_coroutineContext__0_k$();
-    launchImmediately(tmp, _no_name_provided_$factory_402(this._$tmp14_onClick_0_0, it, null));
+    launchImmediately(tmp, _no_name_provided_$factory_402(this._$tmp20_onClick_0_0, it, null));
     Unit_getInstance();
   };
   _no_name_provided__463.prototype.invoke_20e8_k$ = function (p1) {
@@ -107120,11 +107176,10 @@
     kind: 'class',
     interfaces: []
   };
-  function _no_name_provided__464($dogAlive, $dog, this$0, $this_sceneInit, resultContinuation) {
-    this._$dogAlive_3 = $dogAlive;
-    this._$dog_9 = $dog;
-    this._this$0_123 = this$0;
-    this._$this_sceneInit_4 = $this_sceneInit;
+  function _no_name_provided__464($dogAlive, $dog, $this_sceneInit, resultContinuation) {
+    this._$dogAlive_5 = $dogAlive;
+    this._$dog_7 = $dog;
+    this._$this_sceneInit_3 = $this_sceneInit;
     CoroutineImpl_0.call(this, resultContinuation);
   }
   _no_name_provided__464.prototype.invoke_nn0jqo_k$ = function (it, $cont) {
@@ -107142,22 +107197,50 @@
     $sm: do
       try {
         var tmp = this._state_1;
-        if (tmp === 0) {
-          this._exceptionState = 1;
-          if (this._$dogAlive_3._v) {
-            if (round(this._$dog_9._get_y__0_k$()) === 239.0) {
-              launchImmediately_0(this._this$0_123, _no_name_provided_$factory_404(this._$this_sceneInit_4, this._$dog_9, null));
-              Unit_getInstance();
-            }}return Unit_getInstance();
-        } else if (tmp === 1) {
-          throw this._exception_0;
-        }} catch ($p) {
-        throw $p;
+        switch (tmp) {
+          case 0:
+            this._exceptionState = 4;
+            if (this._$dogAlive_5._v) {
+              if (round(this._$dog_7._get_y__0_k$()) === 239.0) {
+                this._state_1 = 1;
+                suspendResult = animate$default(this._$this_sceneInit_3, null, 0.0, null, false, null, false, _no_name_provided_$factory_403(this._$dog_7), 55, null, this);
+                if (suspendResult === _get_COROUTINE_SUSPENDED_()) {
+                  return suspendResult;
+                }continue $sm;
+              } else {
+                this._state_1 = 2;
+                continue $sm;
+              }
+            } else {
+              this._state_1 = 3;
+              continue $sm;
+            }
+
+            break;
+          case 1:
+            Unit_getInstance();
+            this._state_1 = 2;
+            continue $sm;
+          case 2:
+            this._state_1 = 3;
+            continue $sm;
+          case 3:
+            return Unit_getInstance();
+          case 4:
+            throw this._exception_0;
+        }
+      } catch ($p) {
+        if (this._exceptionState === 4) {
+          throw $p;
+        } else {
+          this._state_1 = this._exceptionState;
+          this._exception_0 = $p;
+        }
       }
      while (true);
   };
   _no_name_provided__464.prototype.create_ow3isr_k$ = function (it, completion) {
-    var i = new _no_name_provided__464(this._$dogAlive_3, this._$dog_9, this._this$0_123, this._$this_sceneInit_4, completion);
+    var i = new _no_name_provided__464(this._$dogAlive_5, this._$dog_7, this._$this_sceneInit_3, completion);
     i._it_1 = it;
     return i;
   };
@@ -107166,13 +107249,13 @@
     interfaces: [],
     suspendArity: [1]
   };
-  function _no_name_provided__465($tmp1_safe_receiver_1_2, $tmp15_onClick_0) {
+  function _no_name_provided__465($tmp1_safe_receiver_1_2, $tmp21_onClick_0) {
     this._$tmp1_safe_receiver_1_2_1 = $tmp1_safe_receiver_1_2;
-    this._$tmp15_onClick_0_0 = $tmp15_onClick_0;
+    this._$tmp21_onClick_0_0 = $tmp21_onClick_0;
   }
   _no_name_provided__465.prototype.invoke_nn0jqo_k$ = function (it) {
     var tmp = this._$tmp1_safe_receiver_1_2_1._get_coroutineContext__0_k$();
-    launchImmediately(tmp, _no_name_provided_$factory_405(this._$tmp15_onClick_0_0, it, null));
+    launchImmediately(tmp, _no_name_provided_$factory_404(this._$tmp21_onClick_0_0, it, null));
     Unit_getInstance();
   };
   _no_name_provided__465.prototype.invoke_20e8_k$ = function (p1) {
@@ -107195,7 +107278,7 @@
         var tmp = this._state_1;
         switch (tmp) {
           case 0:
-            this._exceptionState = 5;
+            this._exceptionState = 11;
             this._dogAlive0 = {_v: true};
             var tmp_0 = this;
             tmp_0._obstacles1 = {_v: ArrayList_init_$Create$()};
@@ -107203,160 +107286,300 @@
             var tmp_1 = this;
             tmp_1._timePassed3 = Companion_getInstance_14().fromMilliseconds_ttklb2_k$(0.0);
             this._start4 = Companion_getInstance_12().now_utobi1_k$();
-            addUpdater(this.__this__107, _no_name_provided_$factory_406(this._gameTick2, this._start4));
+            addUpdater(this.__this__107, _no_name_provided_$factory_405(this._gameTick2, this._start4));
             Unit_getInstance();
-            this._ARGUMENT5_0 = Companion_getInstance_144();
             this._state_1 = 1;
-            suspendResult = bitmap('assembly.png', this);
+            suspendResult = bitmap('level_1_gradient_sky.png', this);
             if (suspendResult === _get_COROUTINE_SUSPENDED_()) {
               return suspendResult;
             }
             continue $sm;
           case 1:
-            this._ARGUMENT6_2 = suspendResult;
-            this._ARGUMENT7_2 = this._ARGUMENT6_2.toBMP32_0_k$();
-            this._ARGUMENT8_1 = this._ARGUMENT7_2.scaleLinear_ngl742_k$(1.0, 1.0);
+            this._tmp0_image_05 = suspendResult;
             var tmp_2 = this;
-            tmp_2._ARGUMENT9_2 = slice$default(this._ARGUMENT8_1, null, null, 3, null);
             var tmp_3 = this;
-            tmp_3._tileset10 = this._ARGUMENT5_0.invoke$default_4ryrwn_k$(this._ARGUMENT9_2, 480, 270, 0, 0, null, 56, null);
+            tmp_3._tmp0_addTo_0_26 = Image_init_$Create$_0(this._tmp0_image_05, 0.0, 0.0, null, false, 24, null);
             var tmp_4 = this;
-            var tmp0_map = Bitmap32_init_$Create$(1, 1, null, false, 12, null);
-            var tmp1_repeatX = Repeat_REPEAT_getInstance();
-            var tmp0_tileMap_0 = Companion_getInstance_63().invoke_9i800l_k$(this._tileset10._width_18, this._tileset10._height_18);
-            var tmp0_addTo_0_2 = repeat_0(new TileMap(toIntArray2(tmp0_map), this._tileset10, true, null, null, null, tmp0_tileMap_0), tmp1_repeatX, tmp1_repeatX);
-            var tmp0_apply_0_2_3 = addTo(tmp0_addTo_0_2, this.__this__107);
+            tmp_4._tmp0_apply_0_2_37 = addTo(this._tmp0_addTo_0_26, this.__this__107);
             Unit_getInstance();
-            tmp_4._tilemap11 = tmp0_apply_0_2_3;
-            launchImmediately_0(this.__this__106, _no_name_provided_$factory_407(this.__this__107, this._dogAlive0, this._tilemap11, null));
-            Unit_getInstance();
-            var tmp_5 = this;
-            var tmp_6 = this;
-            tmp_6._tmp1_solidRect_012 = Colors_getInstance()._GOLD;
-            var tmp_7 = this;
-            tmp_7._tmp0_addTo_0_213 = new SolidRect(10.0, 10.0, this._tmp1_solidRect_012);
-            var tmp_8 = this;
-            tmp_8._tmp0_apply_0_2_314 = addTo(this._tmp0_addTo_0_213, this.__this__107);
-            Unit_getInstance();
-            tmp_5._cube15 = xy_0(this._tmp0_apply_0_2_314, 300, 200);
-            this._obstacles1._v.add_2bq_k$(this._cube15);
-            Unit_getInstance();
+            tmp_2._bg8 = this._tmp0_apply_0_2_37;
+            this.__this__107.addChild_4l6ao4_k$(this._bg8);
+            this._ARGUMENT9_2 = Companion_getInstance_144();
             this._state_1 = 2;
-            var tmp_9 = _get_resourcesVfs_().get_6wfw3l_k$('drone_forward.png');
-            suspendResult = readBitmap$default_0(tmp_9, null, null, 3, null, this);
+            suspendResult = bitmap('level_1_buildings_back.png', this);
             if (suspendResult === _get_COROUTINE_SUSPENDED_()) {
               return suspendResult;
             }
             continue $sm;
           case 2:
-            this._smDroneWalk16 = suspendResult;
+            this._ARGUMENT10_0 = suspendResult;
+            this._ARGUMENT11 = this._ARGUMENT10_0.toBMP32_0_k$();
+            this._ARGUMENT12_0 = this._ARGUMENT11.scaleLinear_ngl742_k$(1.0, 1.0);
+            var tmp_5 = this;
+            tmp_5._ARGUMENT13_0 = slice$default(this._ARGUMENT12_0, null, null, 3, null);
+            var tmp_6 = this;
+            tmp_6._tileset114 = this._ARGUMENT9_2.invoke$default_4ryrwn_k$(this._ARGUMENT13_0, 480, 270, 0, 0, null, 56, null);
+            var tmp_7 = this;
+            var tmp0_map = Bitmap32_init_$Create$(1, 1, null, false, 12, null);
+            var tmp1_repeatX = Repeat_REPEAT_getInstance();
+            var tmp1_tileMap_0 = Companion_getInstance_63().invoke_9i800l_k$(this._tileset114._width_18, this._tileset114._height_18);
+            var tmp0_addTo_0_2 = repeat_0(new TileMap(toIntArray2(tmp0_map), this._tileset114, true, null, null, null, tmp1_tileMap_0), tmp1_repeatX, tmp1_repeatX);
+            var tmp0_apply_0_2_3 = addTo(tmp0_addTo_0_2, this.__this__107);
+            Unit_getInstance();
+            tmp_7._tilemap115 = tmp0_apply_0_2_3;
+            this._ARGUMENT16_0 = Companion_getInstance_144();
             this._state_1 = 3;
-            var tmp_10 = _get_resourcesVfs_().get_6wfw3l_k$('dog_run.png');
-            suspendResult = readBitmap$default_0(tmp_10, null, null, 3, null, this);
+            suspendResult = bitmap('level_1_buildings_middle.png', this);
             if (suspendResult === _get_COROUTINE_SUSPENDED_()) {
               return suspendResult;
             }
             continue $sm;
           case 3:
-            this._spriteMapRun17 = suspendResult;
+            this._ARGUMENT17_0 = suspendResult;
+            this._ARGUMENT18 = this._ARGUMENT17_0.toBMP32_0_k$();
+            this._ARGUMENT19 = this._ARGUMENT18.scaleLinear_ngl742_k$(1.0, 1.0);
+            var tmp_8 = this;
+            tmp_8._ARGUMENT20_0 = slice$default(this._ARGUMENT19, null, null, 3, null);
+            var tmp_9 = this;
+            tmp_9._tileset221 = this._ARGUMENT16_0.invoke$default_4ryrwn_k$(this._ARGUMENT20_0, 480, 270, 0, 0, null, 56, null);
+            var tmp_10 = this;
+            var tmp2_map = Bitmap32_init_$Create$(1, 1, null, false, 12, null);
+            var tmp3_repeatX = Repeat_REPEAT_getInstance();
+            var tmp2_tileMap_0 = Companion_getInstance_63().invoke_9i800l_k$(this._tileset221._width_18, this._tileset221._height_18);
+            var tmp0_addTo_0_2_0 = repeat_0(new TileMap(toIntArray2(tmp2_map), this._tileset221, true, null, null, null, tmp2_tileMap_0), tmp3_repeatX, tmp3_repeatX);
+            var tmp0_apply_0_2_3_0 = addTo(tmp0_addTo_0_2_0, this.__this__107);
+            Unit_getInstance();
+            tmp_10._tilemap222 = tmp0_apply_0_2_3_0;
+            this._ARGUMENT23_0 = Companion_getInstance_144();
             this._state_1 = 4;
-            var tmp_11 = _get_resourcesVfs_().get_6wfw3l_k$('dog_death.png');
-            suspendResult = readBitmap$default_0(tmp_11, null, null, 3, null, this);
+            suspendResult = bitmap('level_1_buildings_front.png', this);
             if (suspendResult === _get_COROUTINE_SUSPENDED_()) {
               return suspendResult;
             }
             continue $sm;
           case 4:
-            var spriteMapDeath = suspendResult;
-            var spriteMapRunExp = this._spriteMapRun17.clone_0_k$();
-            var tmp_12 = Companion_getInstance_140();
-            var runAnimation = tmp_12.invoke$default_4r1zm6_k$(this._spriteMapRun17, 48, 48, 0, 0, 6, 1, 0, 0, 0, false, 1536, null);
-            var tmp_13 = Companion_getInstance_140();
-            var runAnimation2 = tmp_13.invoke$default_4r1zm6_k$(spriteMapRunExp, 48, 25, 23, 0, 6, 1, 0, 0, 0, false, 1536, null);
-            var tmp_14 = Companion_getInstance_140();
-            var deathAnimation = tmp_14.invoke$default_4r1zm6_k$(spriteMapDeath, 48, 25, 23, 0, 4, 1, 0, 0, 0, false, 1536, null);
-            var tmp_15 = Companion_getInstance_140();
-            var droneAnimation = tmp_15.invoke$default_4r1zm6_k$(this._smDroneWalk16, 48, 32, 16, 0, 4, 1, 0, 0, 0, false, 1536, null);
-            var tmp0_addTo_0_2_0 = Sprite_init_$Create$(droneAnimation, 0.0, 0.0, null, false, 24, null);
-            var tmp0_apply_0_2_3_0 = addTo(tmp0_addTo_0_2_0, this.__this__107);
-            Unit_getInstance();
-            var tmp_16 = xy_0(tmp0_apply_0_2_3_0, 600, 200);
-            var drone = scale$default_0(tmp_16, -1, 0, 2, null);
-            this._obstacles1._v.add_2bq_k$(drone);
-            Unit_getInstance();
-            var tmp_17 = Companion_getInstance_14().fromMilliseconds_ttklb2_k$(100.0);
-            drone.playAnimationLooped$default_2b9tm9_k$(null, tmp_17, 0, false, 13, null);
-            var shift = {_v: 0.0};
-            addUpdater(drone, _no_name_provided_$factory_408(shift));
-            Unit_getInstance();
-            addUpdater(this._cube15, _no_name_provided_$factory_409());
-            Unit_getInstance();
-            var tmp0_addTo_0_2_1 = Sprite_init_$Create$(runAnimation2, 0.0, 0.0, null, false, 24, null);
+            this._ARGUMENT24_0 = suspendResult;
+            this._ARGUMENT25_0 = this._ARGUMENT24_0.toBMP32_0_k$();
+            this._ARGUMENT26 = this._ARGUMENT25_0.scaleLinear_ngl742_k$(1.0, 1.0);
+            var tmp_11 = this;
+            tmp_11._ARGUMENT27 = slice$default(this._ARGUMENT26, null, null, 3, null);
+            var tmp_12 = this;
+            tmp_12._tileset328 = this._ARGUMENT23_0.invoke$default_4ryrwn_k$(this._ARGUMENT27, 480, 270, 0, 0, null, 56, null);
+            var tmp_13 = this;
+            var tmp4_map = Bitmap32_init_$Create$(1, 1, null, false, 12, null);
+            var tmp5_repeatX = Repeat_REPEAT_getInstance();
+            var tmp3_tileMap_0 = Companion_getInstance_63().invoke_9i800l_k$(this._tileset328._width_18, this._tileset328._height_18);
+            var tmp0_addTo_0_2_1 = repeat_0(new TileMap(toIntArray2(tmp4_map), this._tileset328, true, null, null, null, tmp3_tileMap_0), tmp5_repeatX, tmp5_repeatX);
             var tmp0_apply_0_2_3_1 = addTo(tmp0_addTo_0_2_1, this.__this__107);
             Unit_getInstance();
-            var dog = xy_0(tmp0_apply_0_2_3_1, 60, 206);
-            var tmp_18 = Companion_getInstance_14().fromMilliseconds_ttklb2_k$(80.0);
-            dog.playAnimationLooped$default_2b9tm9_k$(null, tmp_18, 0, false, 13, null);
-            addUpdater(dog, _no_name_provided_$factory_410(this._obstacles1, this._dogAlive0, deathAnimation, this.__this__106, dog));
-            Unit_getInstance();
-            var tmp2_text_0 = Companion_getInstance_141()._DEFAULT_TEXT_SIZE;
-            var tmp3_text_0 = Colors_getInstance()._WHITE;
-            var tmp4_text_0 = _get_DefaultTtfFont_();
-            var tmp5_text_0 = Companion_getInstance_100()._TOP_LEFT_0;
-            var tmp6_text_0 = DefaultStringTextRenderer;
-            var tmp7_text_0 = Companion_getInstance_141()._DEFAULT_AUTO_SCALING;
-            var tmp0_addTo_0_2_2 = new Text_2('0,0', tmp2_text_0, tmp3_text_0, tmp4_text_0, tmp5_text_0, tmp6_text_0, tmp7_text_0);
+            tmp_13._tilemap329 = tmp0_apply_0_2_3_1;
+            this._ARGUMENT30 = Companion_getInstance_144();
+            this._state_1 = 5;
+            suspendResult = bitmap('level_1_road.png', this);
+            if (suspendResult === _get_COROUTINE_SUSPENDED_()) {
+              return suspendResult;
+            }
+            continue $sm;
+          case 5:
+            this._ARGUMENT31 = suspendResult;
+            this._ARGUMENT32 = this._ARGUMENT31.toBMP32_0_k$();
+            this._ARGUMENT33 = this._ARGUMENT32.scaleLinear_ngl742_k$(1.0, 1.0);
+            var tmp_14 = this;
+            tmp_14._ARGUMENT34 = slice$default(this._ARGUMENT33, null, null, 3, null);
+            var tmp_15 = this;
+            tmp_15._tileset435 = this._ARGUMENT30.invoke$default_4ryrwn_k$(this._ARGUMENT34, 480, 270, 0, 0, null, 56, null);
+            var tmp_16 = this;
+            var tmp6_map = Bitmap32_init_$Create$(1, 1, null, false, 12, null);
+            var tmp7_repeatX = Repeat_REPEAT_getInstance();
+            var tmp4_tileMap_0 = Companion_getInstance_63().invoke_9i800l_k$(this._tileset435._width_18, this._tileset435._height_18);
+            var tmp0_addTo_0_2_2 = repeat_0(new TileMap(toIntArray2(tmp6_map), this._tileset435, true, null, null, null, tmp4_tileMap_0), tmp7_repeatX, tmp7_repeatX);
             var tmp0_apply_0_2_3_2 = addTo(tmp0_addTo_0_2_2, this.__this__107);
             Unit_getInstance();
-            var tmp_19 = xy_0(tmp0_apply_0_2_3_2, 100, 50);
-            var xDogCoords = scale$default_0(tmp_19, 1, 0, 2, null);
+            tmp_16._tilemap436 = tmp0_apply_0_2_3_2;
+            this._ARGUMENT37 = Companion_getInstance_144();
+            this._state_1 = 6;
+            suspendResult = bitmap('level_1_road_lights_bg.png', this);
+            if (suspendResult === _get_COROUTINE_SUSPENDED_()) {
+              return suspendResult;
+            }
+            continue $sm;
+          case 6:
+            this._ARGUMENT38 = suspendResult;
+            this._ARGUMENT39 = this._ARGUMENT38.toBMP32_0_k$();
+            this._ARGUMENT40 = this._ARGUMENT39.scaleLinear_ngl742_k$(1.0, 1.0);
+            var tmp_17 = this;
+            tmp_17._ARGUMENT41 = slice$default(this._ARGUMENT40, null, null, 3, null);
+            var tmp_18 = this;
+            tmp_18._tileset542 = this._ARGUMENT37.invoke$default_4ryrwn_k$(this._ARGUMENT41, 480, 270, 0, 0, null, 56, null);
+            var tmp_19 = this;
+            var tmp8_map = Bitmap32_init_$Create$(1, 1, null, false, 12, null);
+            var tmp9_repeatX = Repeat_REPEAT_getInstance();
+            var tmp5_tileMap_0 = Companion_getInstance_63().invoke_9i800l_k$(this._tileset542._width_18, this._tileset542._height_18);
+            var tmp0_addTo_0_2_3 = repeat_0(new TileMap(toIntArray2(tmp8_map), this._tileset542, true, null, null, null, tmp5_tileMap_0), tmp9_repeatX, tmp9_repeatX);
+            var tmp0_apply_0_2_3_3 = addTo(tmp0_addTo_0_2_3, this.__this__107);
+            Unit_getInstance();
+            tmp_19._tilemap543 = tmp0_apply_0_2_3_3;
+            launchImmediately_0(this.__this__106, _no_name_provided_$factory_406(this.__this__107, this._dogAlive0, this._tilemap115, this._tilemap222, this._tilemap329, this._tilemap436, this._tilemap543, null));
+            Unit_getInstance();
+            var tmp_20 = this;
+            var tmp_21 = this;
+            tmp_21._tmp6_solidRect_044 = Colors_getInstance()._GOLD;
+            var tmp_22 = this;
+            tmp_22._tmp0_addTo_0_245 = new SolidRect(10.0, 10.0, this._tmp6_solidRect_044);
+            var tmp_23 = this;
+            tmp_23._tmp0_apply_0_2_346 = addTo(this._tmp0_addTo_0_245, this.__this__107);
+            Unit_getInstance();
+            tmp_20._cube47 = xy_0(this._tmp0_apply_0_2_346, 300, 200);
+            this._obstacles1._v.add_2bq_k$(this._cube47);
+            Unit_getInstance();
+            this._state_1 = 7;
+            var tmp_24 = _get_resourcesVfs_().get_6wfw3l_k$('drone_forward.png');
+            suspendResult = readBitmap$default_0(tmp_24, null, null, 3, null, this);
+            if (suspendResult === _get_COROUTINE_SUSPENDED_()) {
+              return suspendResult;
+            }
+            continue $sm;
+          case 7:
+            this._smDroneWalk48 = suspendResult;
+            this._state_1 = 8;
+            var tmp_25 = _get_resourcesVfs_().get_6wfw3l_k$('dog_run.png');
+            suspendResult = readBitmap$default_0(tmp_25, null, null, 3, null, this);
+            if (suspendResult === _get_COROUTINE_SUSPENDED_()) {
+              return suspendResult;
+            }
+            continue $sm;
+          case 8:
+            this._spriteMapRun49 = suspendResult;
+            this._state_1 = 9;
+            var tmp_26 = _get_resourcesVfs_().get_6wfw3l_k$('dog_death.png');
+            suspendResult = readBitmap$default_0(tmp_26, null, null, 3, null, this);
+            if (suspendResult === _get_COROUTINE_SUSPENDED_()) {
+              return suspendResult;
+            }
+            continue $sm;
+          case 9:
+            this._spriteMapDeath50 = suspendResult;
+            this._spriteMapRunExp51 = this._spriteMapRun49.clone_0_k$();
+            var tmp_27 = this;
+            var tmp_28 = Companion_getInstance_140();
+            tmp_27._runAnimation52 = tmp_28.invoke$default_4r1zm6_k$(this._spriteMapRun49, 48, 48, 0, 0, 6, 1, 0, 0, 0, false, 1536, null);
+            var tmp_29 = this;
+            var tmp_30 = Companion_getInstance_140();
+            tmp_29._runAnimation253 = tmp_30.invoke$default_4r1zm6_k$(this._spriteMapRunExp51, 48, 25, 23, 0, 6, 1, 0, 0, 0, false, 1536, null);
+            var tmp_31 = this;
+            var tmp_32 = Companion_getInstance_140();
+            tmp_31._deathAnimation54 = tmp_32.invoke$default_4r1zm6_k$(this._spriteMapDeath50, 48, 25, 23, 0, 4, 1, 0, 0, 0, false, 1536, null);
+            var tmp_33 = this;
+            var tmp_34 = Companion_getInstance_140();
+            tmp_33._droneAnimation55 = tmp_34.invoke$default_4r1zm6_k$(this._smDroneWalk48, 48, 32, 16, 0, 4, 1, 0, 0, 0, false, 1536, null);
+            var tmp_35 = this;
+            var tmp_36 = this;
+            tmp_36._tmp0_addTo_0_256 = Sprite_init_$Create$(this._droneAnimation55, 0.0, 0.0, null, false, 24, null);
+            var tmp_37 = this;
+            tmp_37._tmp0_apply_0_2_357 = addTo(this._tmp0_addTo_0_256, this.__this__107);
+            Unit_getInstance();
+            var tmp_38 = xy_0(this._tmp0_apply_0_2_357, 600, 200);
+            tmp_35._drone58 = scale$default_0(tmp_38, -1, 0, 2, null);
+            this._obstacles1._v.add_2bq_k$(this._drone58);
+            Unit_getInstance();
+            var tmp_39 = Companion_getInstance_14().fromMilliseconds_ttklb2_k$(100.0);
+            this._drone58.playAnimationLooped$default_2b9tm9_k$(null, tmp_39, 0, false, 13, null);
+            this._shift59 = {_v: 0.0};
+            addUpdater(this._drone58, _no_name_provided_$factory_407(this._shift59));
+            Unit_getInstance();
+            addUpdater(this._cube47, _no_name_provided_$factory_408());
+            Unit_getInstance();
+            var tmp_40 = this;
+            var tmp_41 = this;
+            tmp_41._tmp0_addTo_0_260 = Sprite_init_$Create$(this._runAnimation253, 0.0, 0.0, null, false, 24, null);
+            var tmp_42 = this;
+            tmp_42._tmp0_apply_0_2_361 = addTo(this._tmp0_addTo_0_260, this.__this__107);
+            Unit_getInstance();
+            tmp_40._dog62 = xy_0(this._tmp0_apply_0_2_361, 60, 206);
+            var tmp_43 = Companion_getInstance_14().fromMilliseconds_ttklb2_k$(80.0);
+            this._dog62.playAnimationLooped$default_2b9tm9_k$(null, tmp_43, 0, false, 13, null);
+            addUpdater(this._dog62, _no_name_provided_$factory_409(this._obstacles1, this._dogAlive0, this._deathAnimation54, this.__this__106, this._dog62));
+            Unit_getInstance();
+            this._ARGUMENT63 = Companion_getInstance_144();
+            this._state_1 = 10;
+            suspendResult = bitmap('level_1_road_lights_fg.png', this);
+            if (suspendResult === _get_COROUTINE_SUSPENDED_()) {
+              return suspendResult;
+            }
+            continue $sm;
+          case 10:
+            var ARGUMENT = suspendResult;
+            var ARGUMENT_0 = ARGUMENT.toBMP32_0_k$();
+            var ARGUMENT_1 = ARGUMENT_0.scaleLinear_ngl742_k$(1.0, 1.0);
+            var ARGUMENT_2 = slice$default(ARGUMENT_1, null, null, 3, null);
+            var tileset6 = this._ARGUMENT63.invoke$default_4ryrwn_k$(ARGUMENT_2, 480, 270, 0, 0, null, 56, null);
+            var tmp10_map = Bitmap32_init_$Create$(1, 1, null, false, 12, null);
+            var tmp11_repeatX = Repeat_REPEAT_getInstance();
+            var tmp7_tileMap_0 = Companion_getInstance_63().invoke_9i800l_k$(tileset6._width_18, tileset6._height_18);
+            var tmp0_addTo_0_2_4 = repeat_0(new TileMap(toIntArray2(tmp10_map), tileset6, true, null, null, null, tmp7_tileMap_0), tmp11_repeatX, tmp11_repeatX);
+            var tmp0_apply_0_2_3_4 = addTo(tmp0_addTo_0_2_4, this.__this__107);
+            Unit_getInstance();
+            var tilemap6 = tmp0_apply_0_2_3_4;
+            launchImmediately_0(this.__this__106, _no_name_provided_$factory_410(this.__this__107, this._dogAlive0, tilemap6, null));
+            Unit_getInstance();
             var tmp8_text_0 = Companion_getInstance_141()._DEFAULT_TEXT_SIZE;
             var tmp9_text_0 = Colors_getInstance()._WHITE;
             var tmp10_text_0 = _get_DefaultTtfFont_();
             var tmp11_text_0 = Companion_getInstance_100()._TOP_LEFT_0;
             var tmp12_text_0 = DefaultStringTextRenderer;
             var tmp13_text_0 = Companion_getInstance_141()._DEFAULT_AUTO_SCALING;
-            var tmp0_addTo_0_2_3 = new Text_2('0,0', tmp8_text_0, tmp9_text_0, tmp10_text_0, tmp11_text_0, tmp12_text_0, tmp13_text_0);
-            var tmp0_apply_0_2_3_3 = addTo(tmp0_addTo_0_2_3, this.__this__107);
+            var tmp0_addTo_0_2_5 = new Text_2('0,0', tmp8_text_0, tmp9_text_0, tmp10_text_0, tmp11_text_0, tmp12_text_0, tmp13_text_0);
+            var tmp0_apply_0_2_3_5 = addTo(tmp0_addTo_0_2_5, this.__this__107);
             Unit_getInstance();
-            var tmp_20 = xy_0(tmp0_apply_0_2_3_3, 100, 80);
-            var yDogCoords = scale$default_0(tmp_20, 1, 0, 2, null);
-            addUpdater(xDogCoords, _no_name_provided_$factory_411(dog));
+            var tmp_44 = xy_0(tmp0_apply_0_2_3_5, 100, 50);
+            var xDogCoords = scale$default_0(tmp_44, 1, 0, 2, null);
+            var tmp14_text_0 = Companion_getInstance_141()._DEFAULT_TEXT_SIZE;
+            var tmp15_text_0 = Colors_getInstance()._WHITE;
+            var tmp16_text_0 = _get_DefaultTtfFont_();
+            var tmp17_text_0 = Companion_getInstance_100()._TOP_LEFT_0;
+            var tmp18_text_0 = DefaultStringTextRenderer;
+            var tmp19_text_0 = Companion_getInstance_141()._DEFAULT_AUTO_SCALING;
+            var tmp0_addTo_0_2_6 = new Text_2('0,0', tmp14_text_0, tmp15_text_0, tmp16_text_0, tmp17_text_0, tmp18_text_0, tmp19_text_0);
+            var tmp0_apply_0_2_3_6 = addTo(tmp0_addTo_0_2_6, this.__this__107);
             Unit_getInstance();
-            addUpdater(yDogCoords, _no_name_provided_$factory_412(dog));
+            var tmp_45 = xy_0(tmp0_apply_0_2_3_6, 100, 80);
+            var yDogCoords = scale$default_0(tmp_45, 1, 0, 2, null);
+            addUpdater(xDogCoords, _no_name_provided_$factory_411(this._dog62));
             Unit_getInstance();
-            var tmp14_onClick_0 = _no_name_provided_$factory_413(this._dogAlive0, dog, this.__this__106, this.__this__107, null);
+            addUpdater(yDogCoords, _no_name_provided_$factory_412(this._dog62));
+            Unit_getInstance();
+            var tmp20_onClick_0 = _no_name_provided_$factory_413(this._dogAlive0, this._dog62, this.__this__107, null);
             var tmp0_doMouseEvent_0_1 = click$factory_0();
             var tmp0_safe_receiver_2_3 = this.__this__107;
             var tmp1_safe_receiver_1_2 = tmp0_safe_receiver_2_3 == null ? null : _get_mouse_(tmp0_safe_receiver_2_3);
             if (tmp1_safe_receiver_1_2 == null)
               null;
             else {
-              var tmp_21 = tmp0_doMouseEvent_0_1.get(tmp1_safe_receiver_1_2);
-              tmp_21.add_o72mru_k$(_no_name_provided_$factory_414(tmp1_safe_receiver_1_2, tmp14_onClick_0));
+              var tmp_46 = tmp0_doMouseEvent_0_1.get(tmp1_safe_receiver_1_2);
+              tmp_46.add_o72mru_k$(_no_name_provided_$factory_414(tmp1_safe_receiver_1_2, tmp20_onClick_0));
             }
 
             Unit_getInstance();
             Unit_getInstance();
-            var tmp15_onClick_0 = _no_name_provided_$factory_415(this._dogAlive0, dog, this.__this__106, this.__this__107, null);
+            var tmp21_onClick_0 = _no_name_provided_$factory_415(this._dogAlive0, this._dog62, this.__this__107, null);
             var tmp0_doMouseEvent_0_1_0 = click$factory_1();
             var tmp0_safe_receiver_2_3_0 = this.__this__107;
             var tmp1_safe_receiver_1_2_0 = tmp0_safe_receiver_2_3_0 == null ? null : _get_mouse_(tmp0_safe_receiver_2_3_0);
             if (tmp1_safe_receiver_1_2_0 == null)
               null;
             else {
-              var tmp_22 = tmp0_doMouseEvent_0_1_0.get(tmp1_safe_receiver_1_2_0);
-              tmp_22.add_o72mru_k$(_no_name_provided_$factory_416(tmp1_safe_receiver_1_2_0, tmp15_onClick_0));
+              var tmp_47 = tmp0_doMouseEvent_0_1_0.get(tmp1_safe_receiver_1_2_0);
+              tmp_47.add_o72mru_k$(_no_name_provided_$factory_416(tmp1_safe_receiver_1_2_0, tmp21_onClick_0));
             }
 
             Unit_getInstance();
             Unit_getInstance();
             return Unit_getInstance();
-          case 5:
+          case 11:
             throw this._exception_0;
         }
       } catch ($p) {
-        if (this._exceptionState === 5) {
+        if (this._exceptionState === 11) {
           throw $p;
         } else {
           this._state_1 = this._exceptionState;
@@ -107442,7 +107665,7 @@
     suspendArity: [0]
   };
   function _no_name_provided__467(this$0, resultContinuation) {
-    this._this$0_124 = this$0;
+    this._this$0_122 = this$0;
     CoroutineImpl_0.call(this, resultContinuation);
   }
   _no_name_provided__467.prototype.invoke_nn0jqo_k$ = function (it, $cont) {
@@ -107464,7 +107687,7 @@
           case 0:
             this._exceptionState = 2;
             var tmp_0 = this;
-            tmp_0._tmp0_changeTo_00_2 = this._this$0_124._get_sceneContainer__0_k$();
+            tmp_0._tmp0_changeTo_00_2 = this._this$0_122._get_sceneContainer__0_k$();
             var tmp_1 = this;
             tmp_1._tmp1_changeTo_01_2 = Companion_getInstance_14().fromSeconds_ttklb2_k$(0.0);
             var tmp_2 = this;
@@ -107492,7 +107715,7 @@
      while (true);
   };
   _no_name_provided__467.prototype.create_ow3isr_k$ = function (it, completion) {
-    var i = new _no_name_provided__467(this._this$0_124, completion);
+    var i = new _no_name_provided__467(this._this$0_122, completion);
     i._it_2 = it;
     return i;
   };
@@ -107665,8 +107888,8 @@
       return Unit_getInstance();
     };
   }
-  function _no_name_provided_$factory_396($dogAlive, $tilemap, resultContinuation) {
-    var i = new _no_name_provided__445($dogAlive, $tilemap, resultContinuation);
+  function _no_name_provided_$factory_396($dogAlive, $tilemap1, $tilemap2, $tilemap3, $tilemap4, $tilemap5, resultContinuation) {
+    var i = new _no_name_provided__445($dogAlive, $tilemap1, $tilemap2, $tilemap3, $tilemap4, $tilemap5, resultContinuation);
     var l = function (p1, $cont) {
       return i.invoke_y4fx7b_k$(p1, $cont);
     };
@@ -107696,23 +107919,23 @@
       return Unit_getInstance();
     };
   }
-  function _no_name_provided_$factory_400($dog) {
-    var i = new _no_name_provided__449($dog);
+  function _no_name_provided_$factory_400($dogAlive, $tilemap6, resultContinuation) {
+    var i = new _no_name_provided__449($dogAlive, $tilemap6, resultContinuation);
+    var l = function (p1, $cont) {
+      return i.invoke_y4fx7b_k$(p1, $cont);
+    };
+    l.$arity = 1;
+    return l;
+  }
+  function _no_name_provided_$factory_401($dog) {
+    var i = new _no_name_provided__450($dog);
     return function (p1) {
       i.invoke_njrw7w_k$(p1);
       return Unit_getInstance();
     };
   }
-  function _no_name_provided_$factory_401($this_sceneInit, $dog, resultContinuation) {
-    var i = new _no_name_provided__450($this_sceneInit, $dog, resultContinuation);
-    var l = function ($cont) {
-      return i.invoke_sv8swh_k$($cont);
-    };
-    l.$arity = 0;
-    return l;
-  }
-  function _no_name_provided_$factory_402($tmp14_onClick_0, $it, resultContinuation) {
-    var i = new _no_name_provided__451($tmp14_onClick_0, $it, resultContinuation);
+  function _no_name_provided_$factory_402($tmp20_onClick_0, $it, resultContinuation) {
+    var i = new _no_name_provided__451($tmp20_onClick_0, $it, resultContinuation);
     var l = function ($cont) {
       return i.invoke_sv8swh_k$($cont);
     };
@@ -107726,57 +107949,57 @@
       return Unit_getInstance();
     };
   }
-  function _no_name_provided_$factory_404($this_sceneInit, $dog, resultContinuation) {
-    var i = new _no_name_provided__453($this_sceneInit, $dog, resultContinuation);
+  function _no_name_provided_$factory_404($tmp21_onClick_0, $it, resultContinuation) {
+    var i = new _no_name_provided__453($tmp21_onClick_0, $it, resultContinuation);
     var l = function ($cont) {
       return i.invoke_sv8swh_k$($cont);
     };
     l.$arity = 0;
     return l;
   }
-  function _no_name_provided_$factory_405($tmp15_onClick_0, $it, resultContinuation) {
-    var i = new _no_name_provided__454($tmp15_onClick_0, $it, resultContinuation);
-    var l = function ($cont) {
-      return i.invoke_sv8swh_k$($cont);
-    };
-    l.$arity = 0;
-    return l;
-  }
-  function _no_name_provided_$factory_406($gameTick, $start) {
-    var i = new _no_name_provided__455($gameTick, $start);
+  function _no_name_provided_$factory_405($gameTick, $start) {
+    var i = new _no_name_provided__454($gameTick, $start);
     return function (p1, p2) {
       i.invoke_e9wmmy_k$(p1, p2._milliseconds);
       return Unit_getInstance();
     };
   }
-  function _no_name_provided_$factory_407($this_sceneInit, $dogAlive, $tilemap, resultContinuation) {
-    var i = new _no_name_provided__456($this_sceneInit, $dogAlive, $tilemap, resultContinuation);
+  function _no_name_provided_$factory_406($this_sceneInit, $dogAlive, $tilemap1, $tilemap2, $tilemap3, $tilemap4, $tilemap5, resultContinuation) {
+    var i = new _no_name_provided__455($this_sceneInit, $dogAlive, $tilemap1, $tilemap2, $tilemap3, $tilemap4, $tilemap5, resultContinuation);
     var l = function ($cont) {
       return i.invoke_sv8swh_k$($cont);
     };
     l.$arity = 0;
     return l;
   }
-  function _no_name_provided_$factory_408($shift) {
-    var i = new _no_name_provided__457($shift);
+  function _no_name_provided_$factory_407($shift) {
+    var i = new _no_name_provided__456($shift);
     return function (p1, p2) {
       i.invoke_o0m8s6_k$(p1, p2._milliseconds);
       return Unit_getInstance();
     };
   }
-  function _no_name_provided_$factory_409() {
-    var i = new _no_name_provided__458();
+  function _no_name_provided_$factory_408() {
+    var i = new _no_name_provided__457();
     return function (p1, p2) {
       i.invoke_65f5as_k$(p1, p2._milliseconds);
       return Unit_getInstance();
     };
   }
-  function _no_name_provided_$factory_410($obstacles, $dogAlive, $deathAnimation, this$0, $dog) {
-    var i = new _no_name_provided__459($obstacles, $dogAlive, $deathAnimation, this$0, $dog);
+  function _no_name_provided_$factory_409($obstacles, $dogAlive, $deathAnimation, this$0, $dog) {
+    var i = new _no_name_provided__458($obstacles, $dogAlive, $deathAnimation, this$0, $dog);
     return function (p1, p2) {
       i.invoke_o0m8s6_k$(p1, p2._milliseconds);
       return Unit_getInstance();
     };
+  }
+  function _no_name_provided_$factory_410($this_sceneInit, $dogAlive, $tilemap6, resultContinuation) {
+    var i = new _no_name_provided__459($this_sceneInit, $dogAlive, $tilemap6, resultContinuation);
+    var l = function ($cont) {
+      return i.invoke_sv8swh_k$($cont);
+    };
+    l.$arity = 0;
+    return l;
   }
   function _no_name_provided_$factory_411($dog) {
     var i = new _no_name_provided__460($dog);
@@ -107792,31 +108015,31 @@
       return Unit_getInstance();
     };
   }
-  function _no_name_provided_$factory_413($dogAlive, $dog, this$0, $this_sceneInit, resultContinuation) {
-    var i = new _no_name_provided__462($dogAlive, $dog, this$0, $this_sceneInit, resultContinuation);
+  function _no_name_provided_$factory_413($dogAlive, $dog, $this_sceneInit, resultContinuation) {
+    var i = new _no_name_provided__462($dogAlive, $dog, $this_sceneInit, resultContinuation);
     var l = function (p1, $cont) {
       return i.invoke_nn0jqo_k$(p1, $cont);
     };
     l.$arity = 1;
     return l;
   }
-  function _no_name_provided_$factory_414($tmp1_safe_receiver_1_2, $tmp14_onClick_0) {
-    var i = new _no_name_provided__463($tmp1_safe_receiver_1_2, $tmp14_onClick_0);
+  function _no_name_provided_$factory_414($tmp1_safe_receiver_1_2, $tmp20_onClick_0) {
+    var i = new _no_name_provided__463($tmp1_safe_receiver_1_2, $tmp20_onClick_0);
     return function (p1) {
       i.invoke_nn0jqo_k$(p1);
       return Unit_getInstance();
     };
   }
-  function _no_name_provided_$factory_415($dogAlive, $dog, this$0, $this_sceneInit, resultContinuation) {
-    var i = new _no_name_provided__464($dogAlive, $dog, this$0, $this_sceneInit, resultContinuation);
+  function _no_name_provided_$factory_415($dogAlive, $dog, $this_sceneInit, resultContinuation) {
+    var i = new _no_name_provided__464($dogAlive, $dog, $this_sceneInit, resultContinuation);
     var l = function (p1, $cont) {
       return i.invoke_nn0jqo_k$(p1, $cont);
     };
     l.$arity = 1;
     return l;
   }
-  function _no_name_provided_$factory_416($tmp1_safe_receiver_1_2, $tmp15_onClick_0) {
-    var i = new _no_name_provided__465($tmp1_safe_receiver_1_2, $tmp15_onClick_0);
+  function _no_name_provided_$factory_416($tmp1_safe_receiver_1_2, $tmp21_onClick_0) {
+    var i = new _no_name_provided__465($tmp1_safe_receiver_1_2, $tmp21_onClick_0);
     return function (p1) {
       i.invoke_nn0jqo_k$(p1);
       return Unit_getInstance();

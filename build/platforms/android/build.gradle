@@ -73,8 +73,8 @@ android {
 	}
 	sourceSets {
 		main {
-			assets.srcDirs += ["/Users/saimanchen/Documents/STI/projektmetodik/korge-runner-game/src/commonMain/resources", "/Users/saimanchen/Documents/STI/projektmetodik/korge-runner-game/build/korgeProcessedResources/metadata/main", "/Users/saimanchen/Documents/STI/projektmetodik/korge-runner-game/src/androidMain/resources", "/Users/saimanchen/Documents/STI/projektmetodik/korge-runner-game/src/main/resources"]
-			java.srcDirs += ["/Users/saimanchen/Documents/STI/projektmetodik/korge-runner-game/src/commonMain/kotlin", "/Users/saimanchen/Documents/STI/projektmetodik/korge-runner-game/src/androidMain/kotlin", "/Users/saimanchen/Documents/STI/projektmetodik/korge-runner-game/src/main/java"]
+			assets.srcDirs += ["F:\\Korge_projekt\\korge-runner-game\\src\\commonMain\\resources", "F:\\Korge_projekt\\korge-runner-game\\build\\korgeProcessedResources\\metadata\\main", "F:\\Korge_projekt\\korge-runner-game\\src\\androidMain\\resources", "F:\\Korge_projekt\\korge-runner-game\\src\\main\\resources"]
+			java.srcDirs += ["F:\\Korge_projekt\\korge-runner-game\\src\\commonMain\\kotlin", "F:\\Korge_projekt\\korge-runner-game\\src\\androidMain\\kotlin", "F:\\Korge_projekt\\korge-runner-game\\src\\main\\java"]
 		}
 	}
 }

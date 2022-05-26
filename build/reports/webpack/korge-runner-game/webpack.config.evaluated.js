@@ -32,11 +32,11 @@
   },
   entry: {
     main: [
-      'C:\\Korge Projects\\korge-runner-game\\build\\js\\packages\\korge-runner-game\\kotlin\\korge-runner-game.js'
+      'F:\\Korge_projekt\\korge-runner-game\\build\\js\\packages\\korge-runner-game\\kotlin\\korge-runner-game.js'
     ]
   },
   output: {
-    path: 'C:\\Korge Projects\\korge-runner-game\\build\\distributions',
+    path: 'F:\\Korge_projekt\\korge-runner-game\\build\\distributions',
     filename: [Function: filename],
     library: 'korge-runner-game',
     libraryTarget: 'umd',
