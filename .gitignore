@@ -1,0 +1,14 @@
+/.idea
+/.gradle
+/build
+/classes
+/out
+/genresources
+/packages-lock.json
+RECUP_*.fla
+game.storage
+*.iml
+*.log
+.DS_Store
+local.properties
+local.properties
