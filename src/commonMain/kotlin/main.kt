@@ -51,10 +51,28 @@ object ConfigModule : Module() {
 
 class Scene1: Scene() {
 	override suspend fun Container.sceneInit() {
-		val bitmap = resourcesVfs["start.png"].readBitmap()
-		val image = image(bitmap).scale(0.3).centerOnStage()
+		// background
+		val background = resourcesVfs["title_screen_background.png"].readBitmap()
+		image(background)
 
-		image.onClick {
+		// logo
+		val logo = resourcesVfs["title_screen_logo.png"].readBitmap()
+		val logoImage = image(logo)
+
+		// amazing
+		val amazing = resourcesVfs["title_screen_amazing.png"].readBitmap()
+		val amazingImage = image(amazing)
+
+		// shiba left
+		val shibaLeft = resourcesVfs["title_screen_shiba_left.png"].readBitmap()
+		val shibaLeftImage = image(shibaLeft)
+
+		// shiba that speaks
+		val shibaSugoi = resourcesVfs["title_screen_shiba_sugoi.png"].readBitmap()
+		val shibaSugoiImage = image(shibaSugoi)
+
+		// start game
+		logoImage.onClick {
 //			sceneContainer.changeTo<Industrial>()
 			sceneContainer.changeTo<Scene2>()
 		}
