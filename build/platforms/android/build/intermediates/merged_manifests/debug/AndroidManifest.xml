@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sample.demo"
+    package="com.supertrean.game"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -26,11 +26,12 @@
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Holo.NoActionBar" >
         <activity
-            android:name="com.sample.demo.MainActivity"
+            android:name="com.supertrean.game.MainActivity"
             android:banner="@drawable/app_banner"
             android:icon="@drawable/app_icon"
             android:label="unnamed"
-            android:logo="@drawable/app_icon" >
+            android:logo="@drawable/app_icon"
+            android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

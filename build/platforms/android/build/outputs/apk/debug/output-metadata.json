@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.sample.demo",
+  "applicationId": "com.supertrean.game",
   "variantName": "debug",
   "elements": [
     {
@@ -13,7 +13,7 @@
       "attributes": [],
       "versionCode": 1,
       "versionName": "1.0",
-      "outputFile": "korge-runner-debug.apk"
+      "outputFile": "korge-runner-game-debug.apk"
     }
   ],
   "elementType": "File"

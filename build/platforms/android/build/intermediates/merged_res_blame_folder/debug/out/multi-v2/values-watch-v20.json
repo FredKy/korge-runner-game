@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Korge_projekt\\korge-runner\\build\\platforms\\android\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
+            "outputFile": "F:\\Korge_projekt\\korge-runner-game\\build\\platforms\\android\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Fredrik\\.gradle\\caches\\transforms-3\\d83757246ab4e7c5e1780bffe46dce88\\transformed\\appcompat-1.0.0\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "F:\\Users\\Fredrik\\.gradle\\caches\\transforms-3\\d83757246ab4e7c5e1780bffe46dce88\\transformed\\appcompat-1.0.0\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

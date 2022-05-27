@@ -4,7 +4,7 @@
     "type": "COMPATIBLE_SCREEN_MANIFEST",
     "kind": "Directory"
   },
-  "applicationId": "com.sample.demo",
+  "applicationId": "com.supertrean.game",
   "variantName": "debug",
   "elements": []
 }

@@ -1,5 +1,6 @@
 /.idea
 /.gradle
+/gradle
 /build
 /classes
 /out
@@ -10,5 +11,4 @@ game.storage
 *.iml
 *.log
 .DS_Store
-local.properties
 local.properties
