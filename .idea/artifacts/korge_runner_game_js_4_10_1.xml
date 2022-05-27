@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="korge-runner-game-js-4.10.1">
-    <output-path>$PROJECT_DIR$/build/libs</output-path>
-    <root id="archive" name="korge-runner-game-js-4.10.1.jar">
-      <element id="module-output" name="korge-runner-game.jsMain" />
-    </root>
-  </artifact>
-</component>

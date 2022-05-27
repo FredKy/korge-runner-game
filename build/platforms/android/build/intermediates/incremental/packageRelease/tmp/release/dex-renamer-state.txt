@@ -1,4 +1,0 @@
-#Wed May 25 15:00:47 CEST 2022
-base.0=/Users/saimanchen/Documents/STI/projektmetodik/korge-runner-game/build/platforms/android/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
