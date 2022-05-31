@@ -54,15 +54,29 @@ class Industrial() : Scene() {
             repeatX = BaseTileMap.Repeat.REPEAT,
             tileset = tileset5)
 
+        // layer 5
+        val tileset6 = TileSet(bitmap("level_3_road.png")
+            .toBMP32().scaled(480,270)
+            .scaleLinear(1.0, 1.0).slice(), 480, 270)
+        val tilemap6 = tileMap(
+            Bitmap32(1,1),
+            repeatX = BaseTileMap.Repeat.REPEAT,
+            tileset = tileset6)
 
+        tilemap2.y -= 60
+        tilemap3.y -= 60
+        tilemap4.y -= 60
+        tilemap5.y -= 60
+        val s = (10/9)*0.5
 
         launchImmediately {
             frameBlock(144.timesPerSecond) {
                 while (true) {
-                    tilemap2.x -= 0.1
-                    tilemap3.x -= 0.175
-                    tilemap4.x -= 0.35
-                    tilemap5.x -= 0.9
+                    tilemap2.x -= 0.1*s
+                    tilemap3.x -= 0.175*s
+                    tilemap4.x -= 0.35*s
+                    tilemap5.x -= 0.6*s
+                    tilemap6.x -= 0.9*s
                     frame()
                 }
             }

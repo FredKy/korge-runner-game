@@ -1,5 +1,9 @@
+import com.soywiz.klock.infiniteTimes
 import com.soywiz.klock.seconds
+import com.soywiz.korau.sound.await
+import com.soywiz.korau.sound.playing
 import com.soywiz.korau.sound.readMusic
+import com.soywiz.korau.sound.readSound
 import com.soywiz.korge.input.onClick
 import com.soywiz.korge.scene.Scene
 import com.soywiz.korge.tween.get
@@ -17,7 +21,9 @@ class TitleScreen: Scene() {
 	override suspend fun Container.sceneInit() {
 		// load music
 
-		resourcesVfs["holiznapatreon_dog_days.mp3"].readMusic().playForever()
+		//val music = resourcesVfs["holiznapatreon_dog_days.mp3"].readSound()
+		//val channel = music.play()
+		//channel.playing
 
 		// background
 		val background = resourcesVfs["title_screen_background.png"].readBitmap()
@@ -69,7 +75,8 @@ class TitleScreen: Scene() {
 
 		// start game
 		logoImage.onClick {
-//			sceneContainer.changeTo<Industrial>()
+			//sceneContainer.changeTo<Industrial>()
+			//channel.stop()
 			sceneContainer.changeTo<City>()
 		}
 	}
