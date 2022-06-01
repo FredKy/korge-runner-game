@@ -37,33 +37,31 @@ class City : Scene() {
         //val channel = music.play()
         //println(music.volume)
 
-        // Main hero dogo alive or dead.
+        // Stage lasts this amount of time.
+        val stageEnd = 35000.milliseconds
+
+        // Main hero dog alive or dead, the dog can move and the stage is moving.
+        var stageMoving = true
         var dogAlive: Boolean = true
         var canMove: Boolean = false
         // List of obstacles.
         var obstacles: MutableList<View> = mutableListOf<View>()
-        // Counts how many in game frame ticks have occured.
-        var gameTick: Int = 0
-        var timePassed = 0.milliseconds
-        // Attach updater to this container.
+
+        // Start timer.
         val start = DateTime.now()
 
+        // Attach updater to this container.
         addUpdater() { time ->
             var now = DateTime.now()
-            gameTick += 1
-            //timePassed += 1000.milliseconds
-            //println(gameTick)
-            //println(now-start)
-            //println(time.toString() + "   " + (now-start))
-            if (gameTick == 100) {
-                println(100)
-            }
-            if((now-start) > 15000.milliseconds) {
+            if((now-start)> stageEnd-600.milliseconds) {
                 canMove = false
+            }
+            if((now-start) > stageEnd) {
+                stageMoving = false
                 launch {
-                    delay(TimeSpan(3000.0))
+                    delay(TimeSpan(6000.0))
                     //channel.stop()
-                    sceneContainer.changeTo<Industrial>()
+                    sceneContainer.changeTo<Forest>()
                 }
             }
         }
@@ -117,35 +115,81 @@ class City : Scene() {
             repeatX = BaseTileMap.Repeat.REPEAT,
             tileset = tileset5)
 
-        var random_pos = (0..1).random()
-        val barrel_hitbox = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(960,240-random_pos*33).scale(0.3)
-        val barrel_fg = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(950,240-random_pos*33).scale(0.8)
-        obstacles.add(barrel_hitbox)
+
+        val skaterWalk: Bitmap = resourcesVfs["skater_forward_w32_h36_9.png"].readBitmap()
+        val skaterAnimation = SpriteAnimation(
+            spriteMap = skaterWalk,
+            spriteWidth = 32,
+            spriteHeight = 36,
+            marginLeft = 0,
+            marginTop = 0,
+            columns = 9,
+            rows = 1,
+            offsetBetweenColumns = 0,
+            offsetBetweenRows = 0
+        )
+
+        val skater: Sprite = sprite(skaterAnimation).xy(800,180).scale(1)
+        obstacles.add(skater)
+        skater.playAnimationLooped(spriteDisplayTime = 140.milliseconds)
+        skater.addUpdater {
+            if (dogAlive) {
+                x -= 0.65
+            } else {
+                x += 0.45
+            }
+
+
+        }
+
+
+        var randomPos = (0..1).random()
+        var randomPos2 = if (randomPos == 0) 1 else 0
+        val barrelHitbox = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(960,240-randomPos2*33).scale(0.3)
+        val barrelFg = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(950,240-randomPos2*33).scale(0.8)
+        obstacles.add(barrelHitbox)
+        val barrelHitbox2 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(1360,240-randomPos*33).scale(0.3)
+        val barrelFg2 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(1350,240-randomPos*33).scale(0.8)
+        obstacles.add(barrelHitbox2)
+        val barrelHitbox3 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(1760,240-randomPos2*33).scale(0.3)
+        val barrelFg3 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(1750,240-randomPos2*33).scale(0.8)
+        obstacles.add(barrelHitbox3)
+        val barrelHitbox4 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(1960,240-randomPos*33).scale(0.3)
+        val barrelFg4 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(1950,240-randomPos*33).scale(0.8)
+        obstacles.add(barrelHitbox4)
+        val barrelHitbox5 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(2060,240-randomPos2*33).scale(0.3)
+        val barrelFg5 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(2050,240-randomPos2*33).scale(0.8)
+        obstacles.add(barrelHitbox5)
+        val barrelHitbox6 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(2160,240-randomPos*33).scale(0.3)
+        val barrelFg6 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(2150,240-randomPos*33).scale(0.8)
+        obstacles.add(barrelHitbox6)
 
         launchImmediately {
             frameBlock(144.timesPerSecond) {
-                while (dogAlive) {
+                while (stageMoving) {
                     tilemap1.x -= 0.06
                     tilemap2.x -= 0.1
                     tilemap3.x -= 0.175
                     tilemap4.x -= 0.55
                     tilemap5.x -= 0.55
-                    barrel_hitbox.x -= 0.55
-                    barrel_fg.x -= 0.55
+                    barrelHitbox.x -= 0.55
+                    barrelFg.x -= 0.55
+                    barrelHitbox2.x -= 0.55
+                    barrelFg2.x -= 0.55
+                    barrelHitbox3.x -= 0.55
+                    barrelFg3.x -= 0.55
+                    barrelHitbox4.x -= 0.55
+                    barrelFg4.x -= 0.55
+                    barrelHitbox5.x -= 0.55
+                    barrelFg5.x -= 0.55
+                    barrelHitbox6.x -= 0.55
+                    barrelFg6.x -= 0.55
                     frame()
                 }
             }
         }
 
-        //val cube = solidRect(10.0, 10.0, Colors.GOLD).xy(300, 200)
-        //obstacles.add(cube)
-        //val cube2 = solidRect(48.0, 48.0, Colors.RED).xy(20, 200)
-        //addChild(cube)
-//        cube.addUpdater {
-//            x -= 2
-//        }
-
-
+        // Add sprite assets and animations
         val smDroneWalk: Bitmap = resourcesVfs["drone_forward.png"].readBitmap()
         val spriteMapRun: Bitmap = resourcesVfs["dog_run.png"].readBitmap()
         val spriteMapDeath: Bitmap = resourcesVfs["dog_death.png"].readBitmap()
@@ -172,8 +216,6 @@ class City : Scene() {
             offsetBetweenColumns = 0,
             offsetBetweenRows = 0
         )
-
-
         val droneAnimation = SpriteAnimation(
             spriteMap = smDroneWalk,
             spriteWidth = 48,
@@ -186,31 +228,7 @@ class City : Scene() {
             offsetBetweenRows = 0
         )
 
-        val orangeDroneWalk: Bitmap = resourcesVfs["orange_drone_forward_w82_h63.png"].readBitmap()
-        val orangeDroneAnimation = SpriteAnimation(
-            spriteMap = orangeDroneWalk,
-            spriteWidth = 82,
-            spriteHeight = 63,
-            marginLeft = 0,
-            marginTop = 0,
-            columns = 4,
-            rows = 1,
-            offsetBetweenColumns = 0,
-            offsetBetweenRows = 0
-        )
 
-        val skaterWalk: Bitmap = resourcesVfs["skater_forward_w32_h36_9.png"].readBitmap()
-        val skaterAnimation = SpriteAnimation(
-            spriteMap = skaterWalk,
-            spriteWidth = 32,
-            spriteHeight = 36,
-            marginLeft = 0,
-            marginTop = 0,
-            columns = 9,
-            rows = 1,
-            offsetBetweenColumns = 0,
-            offsetBetweenRows = 0
-        )
 
 
 
@@ -226,40 +244,8 @@ class City : Scene() {
 
 
 
-        val orangeDrone: Sprite = sprite(orangeDroneAnimation).xy(400,80).scale(1)
-        obstacles.add(orangeDrone)
-        orangeDrone.playAnimationLooped(spriteDisplayTime = 150.milliseconds)
-
-        var orange_shift = 0.0
-        var oSpeed = 1.0
-        orangeDrone.addUpdater {
-//			if (gameTick > 1) {
-//				x -= 1
-//				orange_shift += 0.01
-//				y += cos(orange_shift*PI)
-//			}
-            if (gameTick > 1 && gameTick < 300) {
-                //oSpeed-= 0.001
-                x -= 1*oSpeed
-                orange_shift += 0.001
-                y += cos(orange_shift* PI) *0.1
-            } else if (gameTick >= 300 ) {
-
-            }
-
-        }
-        val skater: Sprite = sprite(skaterAnimation).xy(400,180).scale(1)
-        obstacles.add(skater)
-        skater.playAnimationLooped(spriteDisplayTime = 140.milliseconds)
-        skater.addUpdater {
-            if (dogAlive) {
-                x -= 0.65
-            } else {
-                x += 0.45
-            }
 
 
-        }
 
 
 
@@ -282,6 +268,7 @@ class City : Scene() {
                 if (dogAlive) {
                     dogAlive = false
                     canMove = false
+                    stageMoving = false
                     playAnimation(times = 0, deathAnimation, spriteDisplayTime = 200.milliseconds, startFrame = 0, endFrame = 3)
                     launchImmediately {
                         animate(completeOnCancel = false) { dog.moveTo(40.0, round(dog.y) + (-10..10).random(), time = 750.milliseconds) }
@@ -295,6 +282,11 @@ class City : Scene() {
                 }
             }
 
+            if (dogAlive && (DateTime.now()-start) > stageEnd ) {
+                x += 1.1
+
+            }
+
             if (dogAlive) {
                 if(views.input.keys[Key.UP] && dog.y > 207) {
                     dog.y -= 3
@@ -305,23 +297,7 @@ class City : Scene() {
             }
         }
 
-        // layer 7 - buildings back
-        val tileset6 = TileSet(bitmap("level_1_road_lights_fg.png")
-            .toBMP32()
-            .scaleLinear(1.0, 1.0).slice(), 480, 270)
-        val tilemap6 = tileMap(
-            Bitmap32(1,1),
-            repeatX = BaseTileMap.Repeat.REPEAT,
-            tileset = tileset6)
 
-        launchImmediately {
-            frameBlock(144.timesPerSecond) {
-                while (dogAlive) {
-                    tilemap6.x -= 0.55
-                    frame()
-                }
-            }
-        }
 
         val xDogCoords = text("0,0").xy(50,20).scale(1)
         val yDogCoords = text("0,0").xy(50,50).scale(1)
@@ -350,6 +326,25 @@ class City : Scene() {
             if (canMove) {
                 if (round(dog.y) == 239.0) {
                     animate(completeOnCancel = false) { dog.moveTo(60, 206, time = 500.milliseconds) }
+                }
+            }
+        }
+
+
+        // layer 7 - foreground poles
+        val tileset6 = TileSet(bitmap("level_1_road_lights_fg.png")
+            .toBMP32()
+            .scaleLinear(1.0, 1.0).slice(), 480, 270)
+        val tilemap6 = tileMap(
+            Bitmap32(1,1),
+            repeatX = BaseTileMap.Repeat.REPEAT,
+            tileset = tileset6)
+
+        launchImmediately {
+            frameBlock(144.timesPerSecond) {
+                while (stageMoving) {
+                    tilemap6.x -= 0.55
+                    frame()
                 }
             }
         }
@@ -384,7 +379,7 @@ class City : Scene() {
         clearedPopup.addUpdater { time ->
             var now = DateTime.now()
             print((now-start).toString() + "\n")
-            if ((now-start) > 10000.milliseconds && (!clearedPopupShown)) {
+            if ((now-start) > stageEnd && (!clearedPopupShown)) {
                 clearedPopupShown = true
                 launchImmediately {
                     animate(completeOnCancel = false) { parallel(time = 1000.milliseconds) {
