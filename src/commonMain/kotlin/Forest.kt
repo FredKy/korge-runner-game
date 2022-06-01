@@ -78,7 +78,7 @@ class Forest : Scene() {
 
 
         // layer 2 - mountains
-        val tileset2 = TileSet(bitmap("mountains.png")
+        val tileset2 = TileSet(bitmap("mountains_3.png")
             .toBMP32()
             .scaleLinear(1.0, 1.0).slice(), 1440, 270)
         val tilemap2 = tileMap(
@@ -87,7 +87,7 @@ class Forest : Scene() {
             tileset = tileset2)
 
         // layer 3 - forest back
-        val tileset3 = TileSet(bitmap("forest_back_2.png")
+        val tileset3 = TileSet(bitmap("forest_back_3.png")
             .toBMP32()
             .scaleLinear(1.0, 1.0).slice(), 1440, 270)
         val tilemap3 = tileMap(
