@@ -18,7 +18,6 @@ object ConfigModule : Module() {
 	override val size = SizeInt(480, 270)
 	override val windowSize = SizeInt(1200, 675)
 	//override val fullscreen = true
-	//override val mainScene : KClass<out Scene> = City::class
 	override val mainScene : KClass<out Scene> = TitleScreen::class
 
 	override suspend fun AsyncInjector.configure() {

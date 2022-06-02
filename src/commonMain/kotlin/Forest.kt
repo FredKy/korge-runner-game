@@ -113,7 +113,8 @@ class Forest : Scene() {
             repeatX = BaseTileMap.Repeat.REPEAT,
             tileset = tileset5)
 
-        var randomPos = (0..1).random()
+        //var randomPos = (0..1).random()
+        var randomPos = 0
         val barrelHitbox = image(resourcesVfs["forest_barrel_crop.png"].readBitmap()).xy(1260,240-randomPos*33).scale(0.3)
         val barrelFg = image(resourcesVfs["forest_barrel_crop.png"].readBitmap()).xy(1250,240-randomPos*33).scale(0.8)
         obstacles.add(barrelHitbox)
@@ -123,10 +124,19 @@ class Forest : Scene() {
         val carHitbox2 = image(resourcesVfs["forest_car_crop_hood_right.png"].readBitmap()).xy(1010,215).scale(0.6)
         val car2 = image(resourcesVfs["forest_car_crop_hood_right.png"].readBitmap()).xy(1000,210)
         obstacles.add(carHitbox2)
+        val carHitbox3 = image(resourcesVfs["forest_car_crop_hood_left.png"].readBitmap()).xy(1410,215).scale(0.6)
+        val car3 = image(resourcesVfs["forest_car_crop_hood_left.png"].readBitmap()).xy(1400,210)
+        obstacles.add(carHitbox3)
+        val carHitbox4 = image(resourcesVfs["forest_car_crop_hood_left.png"].readBitmap()).xy(2310,215).scale(0.6)
+        val car4 = image(resourcesVfs["forest_car_crop_hood_left.png"].readBitmap()).xy(2300,210)
+        obstacles.add(carHitbox4)
+        val carHitbox5 = image(resourcesVfs["forest_car_crop_hood_left.png"].readBitmap()).xy(2610,245).scale(0.6)
+        val car5 = image(resourcesVfs["forest_car_crop_hood_left.png"].readBitmap()).xy(2600,240)
+        obstacles.add(carHitbox5)
 
         launchImmediately {
             frameBlock(144.timesPerSecond) {
-                while (dogAlive) {
+                while (stageMoving) {
                     //tilemap1.x -= 0.06
                     tilemap2.x -= 0.1
                     tilemap3.x -= 0.175
@@ -136,6 +146,12 @@ class Forest : Scene() {
                     car.x -= 0.55
                     carHitbox2.x -= 0.55
                     car2.x -= 0.55
+                    carHitbox3.x -= 0.55
+                    car3.x -= 0.55
+                    carHitbox4.x -= 0.55
+                    car4.x -= 0.55
+                    carHitbox5.x -= 0.55
+                    car5.x -= 0.55
                     barrelHitbox.x -= 0.55
                     barrelFg.x -= 0.55
                     frame()
@@ -146,7 +162,7 @@ class Forest : Scene() {
 
 
 
-        val smDroneWalk: Bitmap = resourcesVfs["drone_forward.png"].readBitmap()
+        //val smDroneWalk: Bitmap = resourcesVfs["drone_forward.png"].readBitmap()
         val spriteMapRun: Bitmap = resourcesVfs["forest_shiba.png"].readBitmap()
         val spriteMapDeath: Bitmap = resourcesVfs["forest_shiba_death.png"].readBitmap()
 
@@ -173,6 +189,56 @@ class Forest : Scene() {
             offsetBetweenRows = 0
         )
 
+        val catForward: Bitmap = resourcesVfs["forest_yellow_cat_forward.png"].readBitmap()
+        val catAnimation = SpriteAnimation(
+            spriteMap = catForward,
+            spriteWidth = 48,
+            spriteHeight = 26,
+            marginLeft = 0,
+            marginTop = 22,
+            columns = 6,
+            rows = 1,
+            offsetBetweenColumns = 0,
+            offsetBetweenRows = 0
+        )
+
+        val ratForward: Bitmap = resourcesVfs["forest_rat_forward_crop.png"].readBitmap()
+        val ratAnimation = SpriteAnimation(
+            spriteMap = ratForward,
+            spriteWidth = 26,
+            spriteHeight = 11,
+            marginLeft = 0,
+            marginTop = 0,
+            columns = 4,
+            rows = 1,
+            offsetBetweenColumns = 0,
+            offsetBetweenRows = 0
+        )
+
+        val cat: Sprite = sprite(catAnimation).xy(2500,206).scale(-1,1)
+        obstacles.add(cat)
+        cat.playAnimationLooped(spriteDisplayTime = 100.milliseconds)
+        cat.addUpdater {
+            x -= 2
+        }
+        val cat2: Sprite = sprite(catAnimation).xy(2700,236).scale(-1,1)
+        obstacles.add(cat2)
+        cat2.playAnimationLooped(spriteDisplayTime = 100.milliseconds)
+        cat2.addUpdater {
+            x -= 2
+        }
+        val cat3: Sprite = sprite(catAnimation).xy(2950,206).scale(-1,1)
+        obstacles.add(cat3)
+        cat3.playAnimationLooped(spriteDisplayTime = 100.milliseconds)
+        cat3.addUpdater {
+            x -= 2
+        }
+        val rat: Sprite = sprite(ratAnimation).xy(3200,236).scale(-1.5,1.5)
+        obstacles.add(rat)
+        rat.playAnimationLooped(spriteDisplayTime = 100.milliseconds)
+        rat.addUpdater {
+            x -= 2
+        }
 
 
         // Code for dogo.
@@ -185,11 +251,7 @@ class Forest : Scene() {
             canMove = true
         }
         dog.addUpdater {
-            var coll = 0
-
             if(collidesWith(obstacles)) {
-                coll += 1
-                println("Collision: " +coll)
                 if (dogAlive) {
                     dogAlive = false
                     canMove = false
@@ -212,24 +274,31 @@ class Forest : Scene() {
 
             }
 
+            if (dogAlive) {
+                if(views.input.keys[Key.UP] && dog.y > 207) {
+                    dog.y -= 3
+                }
+                if(views.input.keys[Key.DOWN] && dog.y < 238 ) {
+                    dog.y += 3
+                }
+            }
         }
 
+        // Code block for debugging that has been commented out.
 
-
-        val xDogCoords = text("0,0").xy(50,20).scale(1)
+        /*val xDogCoords = text("0,0").xy(50,20).scale(1)
         val yDogCoords = text("0,0").xy(50,50).scale(1)
         val inGameTime = text("Time: ").xy(50,80).scale(1)
 
         inGameTime.addUpdater {
             text = "Time: ${DateTime.now()-start}"
         }
-        //val inGameTime = text("0,0").xy(100,110).scale(1)
         xDogCoords.addUpdater {
             text = "X: ${round(dog.x)}"
         }
         yDogCoords.addUpdater {
             text = "Y: ${round(dog.y)}"
-        }
+        }*/
 
         onClick {
             if (canMove) {
@@ -254,7 +323,7 @@ class Forest : Scene() {
         var startPopupShown = false
         startPopup.addUpdater { time ->
             var now = DateTime.now()
-            print((now-start).toString() + "\n")
+            //print((now-start).toString() + "\n")
             if ((now-start) > 500.milliseconds && (!startPopupShown)) {
                 startPopupShown = true
                 launchImmediately {
@@ -276,7 +345,7 @@ class Forest : Scene() {
         var clearedPopupShown = false
         clearedPopup.addUpdater { time ->
             var now = DateTime.now()
-            print((now-start).toString() + "\n")
+            //print((now-start).toString() + "\n")
             if ((now-start) > stageEnd && (!clearedPopupShown)) {
                 clearedPopupShown = true
                 launchImmediately {

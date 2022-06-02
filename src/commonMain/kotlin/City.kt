@@ -51,7 +51,7 @@ class City : Scene() {
         val start = DateTime.now()
 
         // Attach updater to this container.
-        addUpdater() { time ->
+        addUpdater() {
             var now = DateTime.now()
             if((now-start)> stageEnd-600.milliseconds) {
                 canMove = false
@@ -143,7 +143,8 @@ class City : Scene() {
         }
 
 
-        var randomPos = (0..1).random()
+        // var randomPos = (0..1).random()
+        var randomPos = 1
         var randomPos2 = if (randomPos == 0) 1 else 0
         val barrelHitbox = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(960,240-randomPos2*33).scale(0.3)
         val barrelFg = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(950,240-randomPos2*33).scale(0.8)
@@ -163,6 +164,16 @@ class City : Scene() {
         val barrelHitbox6 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(2160,240-randomPos*33).scale(0.3)
         val barrelFg6 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(2150,240-randomPos*33).scale(0.8)
         obstacles.add(barrelHitbox6)
+        val barrelHitbox7 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(2360,240-randomPos2*33).scale(0.3)
+        val barrelFg7 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(2350,240-randomPos2*33).scale(0.8)
+        obstacles.add(barrelHitbox7)
+        val barrelHitbox8 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(2460,240-randomPos*33).scale(0.3)
+        val barrelFg8 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(2450,240-randomPos*33).scale(0.8)
+        obstacles.add(barrelHitbox8)
+        val barrelHitbox9 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(2560,240-randomPos2*33).scale(0.3)
+        val barrelFg9 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(2550,240-randomPos2*33).scale(0.8)
+        obstacles.add(barrelHitbox9)
+
 
         launchImmediately {
             frameBlock(144.timesPerSecond) {
@@ -184,13 +195,19 @@ class City : Scene() {
                     barrelFg5.x -= 0.55
                     barrelHitbox6.x -= 0.55
                     barrelFg6.x -= 0.55
+                    barrelHitbox7.x -= 0.55
+                    barrelFg7.x -= 0.55
+                    barrelHitbox8.x -= 0.55
+                    barrelFg8.x -= 0.55
+                    barrelHitbox9.x -= 0.55
+                    barrelFg9.x -= 0.55
                     frame()
                 }
             }
         }
 
         // Add sprite assets and animations
-        val smDroneWalk: Bitmap = resourcesVfs["drone_forward.png"].readBitmap()
+
         val spriteMapRun: Bitmap = resourcesVfs["dog_run.png"].readBitmap()
         val spriteMapDeath: Bitmap = resourcesVfs["dog_death.png"].readBitmap()
 
@@ -216,12 +233,13 @@ class City : Scene() {
             offsetBetweenColumns = 0,
             offsetBetweenRows = 0
         )
+        val smDroneWalk: Bitmap = resourcesVfs["drone_forward_crop.png"].readBitmap()
         val droneAnimation = SpriteAnimation(
             spriteMap = smDroneWalk,
-            spriteWidth = 48,
-            spriteHeight = 32,
+            spriteWidth = 36,
+            spriteHeight = 21,
             marginLeft = 0,
-            marginTop = 16,
+            marginTop = 0,
             columns = 4,
             rows = 1,
             offsetBetweenColumns = 0,
@@ -232,16 +250,33 @@ class City : Scene() {
 
 
 
-        val drone: Sprite = sprite(droneAnimation).xy(900,200).scale(-1)
+        val drone: Sprite = sprite(droneAnimation).xy(1100,200).scale(-1)
+        val drone2 = sprite(droneAnimation).xy(4000,233).scale(-1)
+        val drone3 = sprite(droneAnimation).xy(1420,233).scale(-1)
         obstacles.add(drone)
+        obstacles.add(drone2)
+        obstacles.add(drone3)
         drone.playAnimationLooped(spriteDisplayTime = 100.milliseconds)
+        drone2.playAnimationLooped(spriteDisplayTime = 100.milliseconds)
+        drone3.playAnimationLooped(spriteDisplayTime = 100.milliseconds)
         var shift = 0.0
         drone.addUpdater {
             x -= 2
             shift += 0.01
             y += cos(shift* PI)
         }
-
+        var shift2 = 0.0
+        drone2.addUpdater {
+            x -= 2
+            shift2 += 0.01
+            y += cos(shift* PI)
+        }
+        var shift3 = 0.0
+        drone3.addUpdater {
+            x -= 2
+            shift3 += 0.01
+            y += cos(shift* PI)
+        }
 
 
 
@@ -256,15 +291,10 @@ class City : Scene() {
         launchImmediately {
             delay(3000.milliseconds)
             animate(completeOnCancel = false) { dog.moveTo(60.0, round(dog.y), time = 3000.milliseconds) }
-            //delay(TimeSpan(2000.0))
             canMove = true
         }
         dog.addUpdater {
-            var coll = 0
-
             if(collidesWith(obstacles)) {
-                coll += 1
-                println("Collision: " +coll)
                 if (dogAlive) {
                     dogAlive = false
                     canMove = false
@@ -299,20 +329,21 @@ class City : Scene() {
 
 
 
-        val xDogCoords = text("0,0").xy(50,20).scale(1)
+        // Code block for debugging that has been commented out.
+
+        /*val xDogCoords = text("0,0").xy(50,20).scale(1)
         val yDogCoords = text("0,0").xy(50,50).scale(1)
         val inGameTime = text("Time: ").xy(50,80).scale(1)
 
         inGameTime.addUpdater {
             text = "Time: ${DateTime.now()-start}"
         }
-        //val inGameTime = text("0,0").xy(100,110).scale(1)
         xDogCoords.addUpdater {
             text = "X: ${round(dog.x)}"
         }
         yDogCoords.addUpdater {
             text = "Y: ${round(dog.y)}"
-        }
+        }*/
 
         onClick {
             if (canMove) {
@@ -340,6 +371,8 @@ class City : Scene() {
             repeatX = BaseTileMap.Repeat.REPEAT,
             tileset = tileset6)
 
+        tilemap6.x -= 7
+
         launchImmediately {
             frameBlock(144.timesPerSecond) {
                 while (stageMoving) {
@@ -356,7 +389,7 @@ class City : Scene() {
         var startPopupShown = false
         startPopup.addUpdater { time ->
             var now = DateTime.now()
-            print((now-start).toString() + "\n")
+            //print((now-start).toString() + "\n")
             if ((now-start) > 500.milliseconds && (!startPopupShown)) {
                 startPopupShown = true
                 launchImmediately {
@@ -378,7 +411,7 @@ class City : Scene() {
         var clearedPopupShown = false
         clearedPopup.addUpdater { time ->
             var now = DateTime.now()
-            print((now-start).toString() + "\n")
+            //print((now-start).toString() + "\n")
             if ((now-start) > stageEnd && (!clearedPopupShown)) {
                 clearedPopupShown = true
                 launchImmediately {

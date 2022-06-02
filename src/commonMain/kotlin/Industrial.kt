@@ -115,23 +115,72 @@ class Industrial() : Scene() {
         tilemap3.y -= 60
         tilemap4.y -= 60
         tilemap5.y -= 60
-        val s = (10/9)*0.5
+        val s = (10/9)*0.55
+
+        var randomPos = 0
+        var randomPos2 = if (randomPos == 0) 1 else 0
+        val barrelHitbox = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(960,240-randomPos2*33).scale(0.3)
+        val barrelFg = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(950,240-randomPos2*33).scale(0.8)
+        obstacles.add(barrelHitbox)
+        val barrelHitboxB = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(1130,240-randomPos*33).scale(0.3)
+        val barrelFgB = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(1120,240-randomPos*33).scale(0.8)
+        obstacles.add(barrelHitboxB)
+        val barrelHitbox2 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(1360,240-randomPos2*33).scale(0.3)
+        val barrelFg2 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(1350,240-randomPos2*33).scale(0.8)
+        obstacles.add(barrelHitbox2)
+        val barrelHitbox3 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(1760,240-randomPos2*33).scale(0.3)
+        val barrelFg3 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(1750,240-randomPos2*33).scale(0.8)
+        obstacles.add(barrelHitbox3)
+        val barrelHitbox4 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(1960,240-randomPos*33).scale(0.3)
+        val barrelFg4 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(1950,240-randomPos*33).scale(0.8)
+        obstacles.add(barrelHitbox4)
+        val barrelHitbox5 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(2060,240-randomPos2*33).scale(0.3)
+        val barrelFg5 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(2050,240-randomPos2*33).scale(0.8)
+        obstacles.add(barrelHitbox5)
+        val barrelHitbox6 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(2160,240-randomPos*33).scale(0.3)
+        val barrelFg6 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(2150,240-randomPos*33).scale(0.8)
+        obstacles.add(barrelHitbox6)
+        val barrelHitbox7 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(2360,240-randomPos2*33).scale(0.3)
+        val barrelFg7 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(2350,240-randomPos2*33).scale(0.8)
+        obstacles.add(barrelHitbox7)
+        val barrelHitbox8 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(2460,240-randomPos*33).scale(0.3)
+        val barrelFg8 = image(resourcesVfs["barrel_crop.png"].readBitmap()).xy(2450,240-randomPos*33).scale(0.8)
+        obstacles.add(barrelHitbox8)
+
 
         launchImmediately {
             frameBlock(144.timesPerSecond) {
-                while (true) {
+                while (stageMoving) {
                     tilemap2.x -= 0.1*s
                     tilemap3.x -= 0.175*s
                     tilemap4.x -= 0.35*s
                     tilemap5.x -= 0.6*s
                     tilemap6.x -= 0.9*s
+                    barrelHitbox.x -= 0.9*s
+                    barrelFg.x -= 0.9*s
+                    barrelHitbox2.x -= 0.9*s
+                    barrelFg2.x -= 0.9*s
+                    barrelHitbox3.x -= 0.9*s
+                    barrelFg3.x -= 0.9*s
+                    barrelHitbox4.x -= 0.9*s
+                    barrelFg4.x -= 0.9*s
+                    barrelHitbox5.x -= 0.9*s
+                    barrelFg5.x -= 0.9*s
+                    barrelHitbox6.x -= 0.9*s
+                    barrelFg6.x -= 0.9*s
+                    barrelHitbox7.x -= 0.9*s
+                    barrelFg7.x -= 0.9*s
+                    barrelHitbox8.x -= 0.9*s
+                    barrelFg8.x -= 0.9*s
+                    barrelHitboxB.x -= 0.9*s
+                    barrelFgB.x -= 0.9*s
                     frame()
                 }
             }
         }
 
 
-        val smDroneWalk: Bitmap = resourcesVfs["drone_forward.png"].readBitmap()
+        //val smDroneWalk: Bitmap = resourcesVfs["drone_forward.png"].readBitmap()
         val spriteMapRun: Bitmap = resourcesVfs["dog_run.png"].readBitmap()
         val spriteMapDeath: Bitmap = resourcesVfs["dog_death.png"].readBitmap()
 
@@ -171,7 +220,7 @@ class Industrial() : Scene() {
             offsetBetweenRows = 0
         )
 
-        val orangeDrone: Sprite = sprite(orangeDroneAnimation).xy(400,80).scale(1)
+        val orangeDrone: Sprite = sprite(orangeDroneAnimation).xy(840,80).scale(1)
         obstacles.add(orangeDrone)
         orangeDrone.playAnimationLooped(spriteDisplayTime = 150.milliseconds)
 
@@ -179,18 +228,36 @@ class Industrial() : Scene() {
         var oSpeed = 1.0
         orangeDrone.addUpdater {
             var now = DateTime.now()
-//			if (gameTick > 1) {
-//				x -= 1
-//				orange_shift += 0.01
-//				y += cos(orange_shift*PI)
-//			}
-            if ((now-start) > 0.milliseconds && (now-start) < 5000.milliseconds) {
-                //oSpeed-= 0.001
-                x -= 1*oSpeed
+            if ((now-start) > 0.milliseconds && (now-start) < 7000.milliseconds) {
+
+                x -= 1.5*oSpeed
+
+            } else if ((now-start) >= 7000.milliseconds && (now-start) < 10000.milliseconds) {
+                oSpeed-= 0.002
+                x -= 1.5*oSpeed
                 orange_shift += 0.001
                 y += cos(orange_shift* PI) *0.1
-            } else if ((now-start) >= 5000.milliseconds ) {
+            } else if ((now-start) >= 10000.milliseconds && (now-start) < 10700.milliseconds) {
+                oSpeed = 1.0
+                y += 1.5*oSpeed
+            } else if ((now-start) >= 10700.milliseconds && (now-start) < 12700.milliseconds) {
 
+            } else if ((now-start) >= 12700.milliseconds && (now-start) < 13200.milliseconds) {
+                oSpeed = 1.0
+                y -= 1.5*oSpeed
+            } else if ((now-start) >= 13200.milliseconds && (now-start) < 16300.milliseconds) {
+
+            } else if ((now-start) >= 16300.milliseconds && (now-start) < 16900.milliseconds) {
+                y += 1.5*oSpeed
+            } else if ((now-start) >= 19000.milliseconds && (now-start) < 21000.milliseconds) {
+
+            } else if ((now-start) >= 21000.milliseconds && (now-start) < 21500.milliseconds) {
+                y -= 1.5*oSpeed
+            } else if ((now-start) >= 21500.milliseconds && (now-start) < 26800.milliseconds) {
+                x += oSpeed
+            } else if ((now-start) >= 26800.milliseconds && (now-start) < 32800.milliseconds) {
+                x -= 1.5*oSpeed
+                y += 0.75*oSpeed
             }
 
         }
@@ -202,15 +269,10 @@ class Industrial() : Scene() {
         launchImmediately {
             delay(3000.milliseconds)
             animate(completeOnCancel = false) { dog.moveTo(60.0, round(dog.y), time = 3000.milliseconds) }
-            //delay(TimeSpan(2000.0))
             canMove = true
         }
         dog.addUpdater {
-            var coll = 0
-
             if(collidesWith(obstacles)) {
-                coll += 1
-                println("Collision: " +coll)
                 if (dogAlive) {
                     dogAlive = false
                     canMove = false
@@ -232,23 +294,32 @@ class Industrial() : Scene() {
                 x += 1.1
 
             }
+
+            if (dogAlive) {
+                if(views.input.keys[Key.UP] && dog.y > 207) {
+                    dog.y -= 3
+                }
+                if(views.input.keys[Key.DOWN] && dog.y < 238 ) {
+                    dog.y += 3
+                }
+            }
         }
 
+        // Code block for debugging that has been commented out.
 
-        val xDogCoords = text("0,0").xy(50,20).scale(1)
+        /*val xDogCoords = text("0,0").xy(50,20).scale(1)
         val yDogCoords = text("0,0").xy(50,50).scale(1)
         val inGameTime = text("Time: ").xy(50,80).scale(1)
 
         inGameTime.addUpdater {
             text = "Time: ${DateTime.now()-start}"
         }
-        //val inGameTime = text("0,0").xy(100,110).scale(1)
         xDogCoords.addUpdater {
             text = "X: ${round(dog.x)}"
         }
         yDogCoords.addUpdater {
             text = "Y: ${round(dog.y)}"
-        }
+        }*/
 
         onClick {
             if (canMove) {
@@ -274,7 +345,7 @@ class Industrial() : Scene() {
         var startPopupShown = false
         startPopup.addUpdater { time ->
             var now = DateTime.now()
-            print((now-start).toString() + "\n")
+            //print((now-start).toString() + "\n")
             if ((now-start) > 500.milliseconds && (!startPopupShown)) {
                 startPopupShown = true
                 launchImmediately {
@@ -296,7 +367,7 @@ class Industrial() : Scene() {
         var clearedPopupShown = false
         clearedPopup.addUpdater { time ->
             var now = DateTime.now()
-            print((now-start).toString() + "\n")
+            //print((now-start).toString() + "\n")
             if ((now-start) > stageEnd && (!clearedPopupShown)) {
                 clearedPopupShown = true
                 launchImmediately {
