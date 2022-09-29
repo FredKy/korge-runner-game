@@ -1,5 +1,5 @@
 # korge-runner-game
-This made was made for android-phones, built in Kotlin with the game engine KorGe. Most of the graphics were made by ourselves.
+This game was made for android-phones, built in Kotlin with the game engine KorGe. Most of the graphics were made by ourselves.
  
 <img width="323" alt="runner_open" src="https://user-images.githubusercontent.com/90385724/193021295-f70f5519-7787-431b-8b22-9a28b1a0cf09.png"> <img width="323" alt="runner_stage_1" src="https://user-images.githubusercontent.com/90385724/193021305-9b8846e2-d01e-4681-bf45-6f816dc963de.png">
 <img width="323" alt="runner_stage_2" src="https://user-images.githubusercontent.com/90385724/193021309-80e14d93-c418-4d84-b3be-3c64e7ca8649.png">
